@@ -293,3 +293,39 @@ a {
 .navActive {
   color: var(--secondary);
 }
+
+.sectionSpacing {
+  margin-bottom: 250px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--dark);
+  color: white;
+  text-align: center;
+}
+
+footer a { 
+  color: white;
+  text-align: center;
+}
+
+#headerStyle{
+  position: fixed;
+  width: 100%;
+}
+
+html {
+  scroll-padding-top: 90px; /* height of sticky header */
+}
+
+#contactTop {
+  margin-top: 50px
+}
+
+.icons a {
+  padding: 10px;
+}

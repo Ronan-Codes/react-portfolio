@@ -15,7 +15,7 @@ function Nav(props) {
   }, [currentCategory]);
 
   return (
-    <header className="flex-row px-1">
+    <header className="flex-row px-1" id="headerStyle">
       <h2>
         <a data-testid="link" href="/">
           <span role="img" aria-label="camera">🧑🏻‍💻</span> Ronan Galvez
@@ -38,16 +38,21 @@ function Nav(props) {
                 }`}
               key={category.name}
             >
-              <span
+              <a href="#portfolio"
                 onClick={() => {
                   setCurrentCategory(category);
                   setContactSelected(false);
                 }}
               >
                 {capitalizeFirstLetter(category.name)}
-              </span>
+              </a>
             </li>
           ))}
+          <li className="mx-2">
+            <a data-testid="resume" href="#resume" onClick={() => setContactSelected(false)}>
+              Resume
+            </a>
+          </li>
         </ul>
       </nav>
     </header>

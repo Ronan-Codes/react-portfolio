@@ -2,7 +2,7 @@ import React from 'react';
 import coverImage from '../../assets/cover/temp-portrait.jpeg';
 function About() {
   return (
-    <section className="my-5">
+    <section className="my-5 sectionSpacing">
       <h1 id="about">Ronan Galvez</h1>
       <p>Full-Stack Web Developer</p>
       <img src={coverImage} className="my-2" style={{ width: "10%" }} alt="cover" />
