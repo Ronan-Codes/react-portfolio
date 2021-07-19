@@ -7,29 +7,46 @@ const PhotoList = ({ category }) => {
 
   const [photos] = useState([
     {
-      name: 'Grocery aisle',
+      name: 'Budget Tracker',
       category: 'portfolio',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      liveUrl: 'https://ronan-budget-tracker.herokuapp.com/',
+      github: 'https://github.com/Ronan-Codes/budget-tracker.git'
     },
     {
-      name: 'Grocery booth',
+      name: 'Self-Care',
       category: 'portfolio',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      description: 'Self-Care is a simple and convenient journaling app. It utilizes a third-party datepicker app (Zebra Datepicker) to seemlessly keep record of daily journal entries. Future developments may include a workout-log portion, and other self-care related features (Ex. daily motivational quotes).',
+      liveUrl: 'https://ronan-codes-self-care.herokuapp.com/',
+      github: 'https://github.com/Ronan-Codes/self-care.git'
     },
     {
-      name: 'Building exterior',
+      name: 'DateNite',
       category: 'portfolio',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      description: 'DateNite simplifies the process of deciding what to do for date night. Simply provide a primary ingredients, and DateNite provides easy-to-make recipes for your ideal date night, dine-in meal and cocktail.',
+      liveUrl: 'https://justpuzey.github.io/DateNite/',
+      github: 'https://github.com/justpuzey/DateNite'
     },
     {
-      name: 'Restaurant table',
+      name: 'Note Taker',
       category: 'portfolio',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      description: 'Note Taker is your standard note-taking application that allows to you create, save, and delete notes. To create a note, add a Title and Description. For example: you can create a Task titled Homework, and include a description for the steps of your task at hand. This application utilizes Express.js to retrieve, create, and delete data from a JSON.file. Note Taker is deployed through Heroku.',
+      liveUrl: 'https://ronan-note-taker.herokuapp.com/',
+      github: 'https://ronan-codes.github.io/run-buddy/'
     },
     {
-      name: 'Cafe interior',
+      name: 'Run Buddy',
       category: 'portfolio',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      description: 'Run Buddy is a mock website for a fitness service company. Plain HTML and CSS is utilized to create the layout and various form elements.',
+      liveUrl: 'https://ronan-codes.github.io/run-buddy/',
+      github: 'https://github.com/Ronan-Codes/run-buddy.git'
+    },
+    {
+      name: 'Weather Dashboard',
+      category: 'portfolio',
+      description: 'Weather Dashboard is an interactive weather application that allows a user to search a city name and the application will return various weather information. Weather Dashboard utilizes OpenWeatherMap API for acquiring weather information data. Local Storage is utilized to save pase searched cities.',
+      liveUrl: 'https://ronan-codes.github.io/weather-dashboard/',
+      github: 'https://github.com/Ronan-Codes/weather-dashboard.git'
     }
   ]);
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Modal = ({ onClose, currentPhoto }) => {
-  const { name, description, category, index  } = currentPhoto;
+  const { name, description, liveUrl, github, category, index  } = currentPhoto;
 
   return (
     <div className="modalBackdrop">
@@ -10,6 +10,13 @@ const Modal = ({ onClose, currentPhoto }) => {
         <img src={require(`../../assets/large/${category}/${index}.jpg`)} alt="current category" />
         <p>
           {description}
+        </p>
+        <p>
+          <a href={liveUrl}>
+            Deployed Site
+          </a> <a href={github}>
+            GitHub
+          </a>
         </p>
         <button type="button" onClick={onClose}>
           Close this modal

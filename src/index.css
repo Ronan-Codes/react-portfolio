@@ -32,8 +32,8 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
-  background: var(--dark);
-  color: var(--light);
+  background: rgb(226, 226, 226);
+  color: var(--dark);
   font-family: 'Poiret One', cursive;
 }
 
@@ -93,6 +93,10 @@ header {
 }
 
 header a {
+  color: var(--light);
+}
+
+nav {
   color: var(--light);
 }
 
@@ -251,7 +255,7 @@ textarea {
 }
 
 .modalContainer {
-  background: var(--darker);
+  background: rgba(2, 124, 143, 0.566);
   border-radius: 5px;
   max-width: 100%;
   margin: 50px auto;
@@ -266,7 +270,7 @@ textarea {
 }
 
 button {
-  background: var(--primary);
+  background: var(--secondary);
   border: 0;
   border-radius: 5px;
   color: #fff;
@@ -279,7 +283,7 @@ button {
 
 a {
   border-radius: 5px;
-  color: var(--primary);
+  color: var(--secondary);
   font-weight: 600;
   padding: 2px 4px;
   margin-left: -2px;
