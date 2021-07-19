@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/Ronan-Codes/react-portfolio.git/static/css/main.7bcbee03.chunk.css",
-    "main.js": "/Ronan-Codes/react-portfolio.git/static/js/main.dd67cc0a.chunk.js",
-    "main.js.map": "/Ronan-Codes/react-portfolio.git/static/js/main.dd67cc0a.chunk.js.map",
-    "runtime-main.js": "/Ronan-Codes/react-portfolio.git/static/js/runtime-main.8486c271.js",
-    "runtime-main.js.map": "/Ronan-Codes/react-portfolio.git/static/js/runtime-main.8486c271.js.map",
-    "static/js/2.c7e06ab6.chunk.js": "/Ronan-Codes/react-portfolio.git/static/js/2.c7e06ab6.chunk.js",
-    "static/js/2.c7e06ab6.chunk.js.map": "/Ronan-Codes/react-portfolio.git/static/js/2.c7e06ab6.chunk.js.map",
-    "index.html": "/Ronan-Codes/react-portfolio.git/index.html",
-    "precache-manifest.c6e94ed5b83152c0e94ab6dca4f97dac.js": "/Ronan-Codes/react-portfolio.git/precache-manifest.c6e94ed5b83152c0e94ab6dca4f97dac.js",
-    "service-worker.js": "/Ronan-Codes/react-portfolio.git/service-worker.js",
-    "static/css/main.7bcbee03.chunk.css.map": "/Ronan-Codes/react-portfolio.git/static/css/main.7bcbee03.chunk.css.map",
-    "static/js/2.c7e06ab6.chunk.js.LICENSE.txt": "/Ronan-Codes/react-portfolio.git/static/js/2.c7e06ab6.chunk.js.LICENSE.txt",
-    "static/media/0.jpg": "/Ronan-Codes/react-portfolio.git/static/media/0.e0147254.jpg",
-    "static/media/1.jpg": "/Ronan-Codes/react-portfolio.git/static/media/1.4252e23b.jpg",
-    "static/media/2.jpg": "/Ronan-Codes/react-portfolio.git/static/media/2.301f2e9a.jpg",
-    "static/media/3.jpg": "/Ronan-Codes/react-portfolio.git/static/media/3.af8a0972.jpg",
-    "static/media/4.jpg": "/Ronan-Codes/react-portfolio.git/static/media/4.9205849c.jpg",
-    "static/media/5.jpg": "/Ronan-Codes/react-portfolio.git/static/media/5.5d7bb602.jpg",
-    "static/media/ronanGalvezResume.pdf": "/Ronan-Codes/react-portfolio.git/static/media/ronanGalvezResume.6f7c959e.pdf",
-    "static/media/temp-portrait.jpeg": "/Ronan-Codes/react-portfolio.git/static/media/temp-portrait.28302ec1.jpeg"
+    "main.css": "/react-portfolio/static/css/main.7bcbee03.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.ffcf2969.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.ffcf2969.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.213b1880.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.213b1880.js.map",
+    "static/js/2.c7e06ab6.chunk.js": "/react-portfolio/static/js/2.c7e06ab6.chunk.js",
+    "static/js/2.c7e06ab6.chunk.js.map": "/react-portfolio/static/js/2.c7e06ab6.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "precache-manifest.70c9efda5fd235ac16ca4a99801cd052.js": "/react-portfolio/precache-manifest.70c9efda5fd235ac16ca4a99801cd052.js",
+    "service-worker.js": "/react-portfolio/service-worker.js",
+    "static/css/main.7bcbee03.chunk.css.map": "/react-portfolio/static/css/main.7bcbee03.chunk.css.map",
+    "static/js/2.c7e06ab6.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.c7e06ab6.chunk.js.LICENSE.txt",
+    "static/media/0.jpg": "/react-portfolio/static/media/0.e0147254.jpg",
+    "static/media/1.jpg": "/react-portfolio/static/media/1.4252e23b.jpg",
+    "static/media/2.jpg": "/react-portfolio/static/media/2.301f2e9a.jpg",
+    "static/media/3.jpg": "/react-portfolio/static/media/3.af8a0972.jpg",
+    "static/media/4.jpg": "/react-portfolio/static/media/4.9205849c.jpg",
+    "static/media/5.jpg": "/react-portfolio/static/media/5.5d7bb602.jpg",
+    "static/media/ronanGalvezResume.pdf": "/react-portfolio/static/media/ronanGalvezResume.6f7c959e.pdf",
+    "static/media/temp-portrait.jpeg": "/react-portfolio/static/media/temp-portrait.28302ec1.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8486c271.js",
+    "static/js/runtime-main.213b1880.js",
     "static/js/2.c7e06ab6.chunk.js",
     "static/css/main.7bcbee03.chunk.css",
-    "static/js/main.dd67cc0a.chunk.js"
+    "static/js/main.ffcf2969.chunk.js"
   ]
 }

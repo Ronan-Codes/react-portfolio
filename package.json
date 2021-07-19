@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/Ronan-Codes/react-portfolio.git",
+  "homepage": "http://ronan-codes.github.io/react-portfolio/",
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -34,6 +34,6 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.8.0",
     "@testing-library/react": "^9.5.0",
-    "gh-pages": "^3.0.0"
+    "gh-pages": "^3.2.3"
   }
 }
