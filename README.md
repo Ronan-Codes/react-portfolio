@@ -6,8 +6,9 @@ This is a portfolio to showcase for future employers and collaborators.
 ## Table of Contents
 1. [Description](#description)
 2. [Technologies](#Technologies)
-5. [Screenshots](#Screenshots)
-8. [Author](#Author)
+3. [Screenshots](#Screenshots)
+4. [Deployed](#Deployed)
+4. [Author](#Author)
 
 ## Technologies
 ```
@@ -16,6 +17,9 @@ HTML | CSS | Bootstrap | JavaScript | CRA | React
 
 ## Screenshots 
 ![Screenshot 1](./src/assets/images/portfolioScreenshot.png)
+
+## Deployed 
+[Portfolio Link](https://ronan-codes.github.io/react-portfolio/)
 
 ## Author
 * This application was written and developed by Ronan Galvez as part of the UCF Coding Bootcamp.
