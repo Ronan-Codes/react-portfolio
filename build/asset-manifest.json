@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Ronan-Codes/react-portfolio.git/static/css/main.4278ce57.chunk.css",
+    "main.js": "/Ronan-Codes/react-portfolio.git/static/js/main.a94b53eb.chunk.js",
+    "main.js.map": "/Ronan-Codes/react-portfolio.git/static/js/main.a94b53eb.chunk.js.map",
+    "runtime-main.js": "/Ronan-Codes/react-portfolio.git/static/js/runtime-main.3116936b.js",
+    "runtime-main.js.map": "/Ronan-Codes/react-portfolio.git/static/js/runtime-main.3116936b.js.map",
+    "static/js/2.05819278.chunk.js": "/Ronan-Codes/react-portfolio.git/static/js/2.05819278.chunk.js",
+    "static/js/2.05819278.chunk.js.map": "/Ronan-Codes/react-portfolio.git/static/js/2.05819278.chunk.js.map",
+    "index.html": "/Ronan-Codes/react-portfolio.git/index.html",
+    "precache-manifest.ffb5800d3d7678b5a725b700e587a49d.js": "/Ronan-Codes/react-portfolio.git/precache-manifest.ffb5800d3d7678b5a725b700e587a49d.js",
+    "service-worker.js": "/Ronan-Codes/react-portfolio.git/service-worker.js",
+    "static/css/main.4278ce57.chunk.css.map": "/Ronan-Codes/react-portfolio.git/static/css/main.4278ce57.chunk.css.map",
+    "static/js/2.05819278.chunk.js.LICENSE.txt": "/Ronan-Codes/react-portfolio.git/static/js/2.05819278.chunk.js.LICENSE.txt",
+    "static/media/0.jpg": "/Ronan-Codes/react-portfolio.git/static/media/0.efdfd6a4.jpg",
+    "static/media/1.jpg": "/Ronan-Codes/react-portfolio.git/static/media/1.e05d88b5.jpg",
+    "static/media/2.jpg": "/Ronan-Codes/react-portfolio.git/static/media/2.efb308ab.jpg",
+    "static/media/3.jpg": "/Ronan-Codes/react-portfolio.git/static/media/3.ff98319a.jpg",
+    "static/media/4.jpg": "/Ronan-Codes/react-portfolio.git/static/media/4.ed8f654e.jpg",
+    "static/media/cover-image.jpg": "/Ronan-Codes/react-portfolio.git/static/media/cover-image.6a2b7a16.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3116936b.js",
+    "static/js/2.05819278.chunk.js",
+    "static/css/main.4278ce57.chunk.css",
+    "static/js/main.a94b53eb.chunk.js"
+  ]
+}
