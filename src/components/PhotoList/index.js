@@ -7,11 +7,11 @@ const PhotoList = ({ category }) => {
 
   const [photos] = useState([
     {
-      name: 'Budget Tracker',
+      name: "Pic'd Up",
       category: 'portfolio',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-      liveUrl: 'https://ronan-budget-tracker.herokuapp.com/',
-      github: 'https://github.com/Ronan-Codes/budget-tracker.git'
+      description: "Pic'd Up is a portfolio hosting site specifically made for photographers. The simple and clean design makes it easy for photographers to showcase their work and even easier for clients to search for a photographer they need.",
+      liveUrl: 'https://evening-refuge-82542.herokuapp.com/',
+      github: 'https://github.com/Ronan-Codes/Project-3.git'
     },
     {
       name: 'Self-Care',
