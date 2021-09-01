@@ -5,8 +5,8 @@ function Nav(props) {
   const {
     categories = [],
     setCurrentCategory,
-    contactSelected,
     currentCategory,
+    contactSelected,
     setContactSelected,
   } = props;
 
@@ -23,36 +23,43 @@ function Nav(props) {
       </h2>
       <nav>
         <ul className="flex-row">
-          <li className="mx-2">
+
+          {/* <li className="mx-2">
             <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
               About me
             </a>
-          </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+          </li> */}
+
+          {/* <li className={`mx-2 ${contactSelected && 'navActive'}`}>
             <span onClick={() => setContactSelected(true)}>Contact</span>
-          </li>
-          {categories.map((category) => (
+          </li> */}
+
+          {categories.map((category, i) => (
             <li
-              className={`mx-1 ${
-                currentCategory.name === category.name && !contactSelected && 'navActive'
-                }`}
+              // className={`mx-1 ${
+              //   currentCategory.name === category.name && 'navActive'
+              //   }`}
+              className="mx-1"
               key={category.name}
             >
-              <a href="#portfolio"
+              <a
                 onClick={() => {
-                  setCurrentCategory(category);
-                  setContactSelected(false);
+                  setCurrentCategory(categories[i]);
+                  ;
                 }}
+                className={currentCategory.name === categories[i].name && 'navActive'}
               >
                 {capitalizeFirstLetter(category.name)}
               </a>
             </li>
           ))}
-          <li className="mx-2">
+
+          {/* <li className="mx-2">
             <a data-testid="resume" href="#resume" onClick={() => setContactSelected(false)}>
               Resume
             </a>
-          </li>
+          </li> */}
+
         </ul>
       </nav>
     </header>

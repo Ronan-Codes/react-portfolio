@@ -8,13 +8,22 @@ import Resume from './components/Resume';
 function App() {
   const [categories] = useState([
     {
+      name: 'about me'
+    },
+    {
+      name: 'contact'
+    },
+    {
       name: 'portfolio'
-    }
+    },
+    {
+      name: 'resume'
+    },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
-  const [contactSelected, setContactSelected] = useState(false);
+  // const [contactSelected, setContactSelected] = useState(false);
 
 
   return (
@@ -23,11 +32,23 @@ function App() {
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
+        // contactSelected={contactSelected}
+        // setContactSelected={setContactSelected}
       ></Nav>
       <main>
-        {!contactSelected ? (
+        {currentCategory == categories[0] && (
+          <About></About>
+        )}
+        {currentCategory == categories[1] && (
+          <ContactForm></ContactForm>
+        )}
+        {currentCategory == categories[2] && (
+          <Gallery currentCategory={currentCategory}></Gallery>
+        )}
+        {currentCategory == categories[3] && (
+          <Resume></Resume>
+        )}
+        {/* {!contactSelected ? (
           <>
             <About></About>
             <Gallery currentCategory={currentCategory}></Gallery>
@@ -35,7 +56,7 @@ function App() {
           </>
         ) : (
           <ContactForm></ContactForm>
-        )}
+        )} */}
       </main>
 
       <footer>
