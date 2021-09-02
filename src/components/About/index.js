@@ -11,13 +11,7 @@ function About() {
 
       <div className="col-6">
         <h1 className="line-1">Ronan Galvez</h1>
-        <h5 className="">
-          {/* <span
-            class="txt-rotate"
-            data-period="2000"
-            data-rotate='[ "Front-End", "Full-Stack Web Developer" ]'></span> */}
-            <span className="front-full"></span> <span> Web Developer</span>
-        </h5>
+        <h4 className="line-2">Full-Stack Web Developer</h4>
 
         <div className="my-2">
           <p>
