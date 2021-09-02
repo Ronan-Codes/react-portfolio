@@ -1,7 +1,7 @@
 main {
   margin: 0 auto;
   max-width: 90%;
-  padding: 20px 15px 20px 15px;
+  padding: 20px 0 20px 0;
 }
 :root {
   --primary: #8c54ff;
@@ -337,5 +337,135 @@ html {
 
 .hover:hover::after {
   width: 100%;
-  //transition: width .3s;
+  transition: width .3s;
 }
+
+/* Typewriter Animation */
+
+.line-1 {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  /* font-size: 28px; */
+  color: black;
+}
+
+/* Animation */
+.line-1 {
+  animation: animated-text 2s steps(15,end) 1s 1 normal both,
+             animated-cursor 800ms steps(15,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 285px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: var(--secondary);}
+  to{border-right-color: transparent;}
+}
+
+  /* lin-2 */
+  /* html,body {
+    font-family: 'Raleway', sans-serif;
+    padding: 3em 2em;
+    font-size: 18px;
+    background: #222;
+    color: #aaa
+  } */
+  
+  /* h5 {
+    font-weight: 200;
+    margin: 0.4em 0;
+  }
+
+  h2 { font-size: 3.5em; }
+ */
+
+.front-full {
+  /* position: absolute; */
+  /* width: 100%; */
+  /* height: 50%; */
+  /* font-size: 45px; */
+}
+
+.front-full:after {
+  /* position: absolute; */
+  content: "";
+  /* width: 100%; */
+  /* height: 100%; */
+  /* line-height: 48px; */
+  /* left: 30%; */
+  /* top: 50%; */
+  animation: abomination1 4s linear 1;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes abomination1 {
+  0% {
+    content: "Front-End";
+  }
+  15% {
+    content: "Front-End";
+  }
+  20% {
+    content: "Front-En";
+  }
+  25% {
+    content: "Front-E";
+  }
+  30% {
+    content: "Front-";
+  }
+  35% {
+    content: "Front";
+  }
+  40% {
+    content: "Fron";
+  }
+  45% {
+    content: "Fro";
+  }
+  50% {
+    content: "Fr";
+  }
+  55% {
+    content: "F";
+  }
+  60% {
+    content: "Fu";
+  }
+  65% {
+    content: "Ful";
+  }
+  70% {
+    content: "Full";
+  }
+  75% {
+    content: "Full-";
+  }
+  80% {
+    content: "Full-S";
+  }
+  85% {
+    content: "Full-St";
+  }
+  90% {
+    content: "Full-Sta";
+  }
+  95% {
+    content: "Full-Stac";
+  }
+  100% {
+    content: "Full-Stack";
+  }
+}
+
+
