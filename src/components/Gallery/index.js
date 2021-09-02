@@ -5,7 +5,7 @@ import { capitalizeFirstLetter } from '../../utils/helpers';
 function Gallery(props) {
   const { currentCategory } = props;
   return (
-    <section className="sectionSpacing">
+    <section className="">
       <h1 id="portfolio" data-testid="h1tag">{capitalizeFirstLetter(currentCategory.name)}</h1>
       <p>{currentCategory.description}</p>
       <PhotoList category={currentCategory.name} />

@@ -1,7 +1,7 @@
 main {
   margin: 0 auto;
   max-width: 90%;
-  padding: 50px 30px;
+  padding: 20px 15px 20px 15px;
 }
 :root {
   --primary: #8c54ff;
@@ -186,7 +186,7 @@ textarea {
   justify-content: flex-end;
 }
 
-.mx-1 {
+.mx-1-custom {
   margin-right: var(--spacing-one);
   margin-left: var(--spacing-one);
 }
@@ -294,10 +294,6 @@ a {
   color: var(--secondary);
 }
 
-.sectionSpacing {
-  margin-bottom: 250px;
-}
-
 footer {
   position: fixed;
   left: 0;
@@ -322,10 +318,24 @@ html {
   scroll-padding-top: 90px; /* height of sticky header */
 }
 
-#contactTop {
-  margin-top: 50px
-}
-
 .icons a {
   padding: 10px;
+}
+
+.hover a:hover {
+  color: var(--secondary);
+}
+
+.hover::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #6c757d;
+  transition: width .3s;
+}
+
+.hover:hover::after {
+  width: 100%;
+  //transition: width .3s;
 }
