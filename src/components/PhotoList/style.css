@@ -89,13 +89,25 @@
 }
 
 .project-title {
-  border-bottom: 2px solid #f3a847
+  border-bottom: 2px solid #f3a847;
+  padding-bottom: 1.5px;
 }
 
 .project-badge {
   margin: 0 2px 2px 0
 }
 
-.project-border-style {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.891)
+/* .project-border-style::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.891);
+  order: 9;
+} */
+/* 
+@media screen and (max-width: 576px) {
+#projectPhotoCont{
+  order: 1;
 }
+} */

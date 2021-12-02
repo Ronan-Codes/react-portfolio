@@ -124,11 +124,11 @@ const PhotoList = ({ category }) => {
               <>
                 <div className="row col-lg-12 justify-content-center project-border-style">
 
-                  <div className="col-lg-4">
+                  <div className="col-lg-4 col-sm-12 order-sm-last order-lg-first align-self-center">
                     <div className="card project-card text-start" >
                       <div className="card-body">
-                        <h5 className="card-title fs-2 fw-bold"><span className="project-title">Self Care</span></h5>
-                        <h6 className="card-subtitle mb-2 text-muted mt-1">
+                        <h5 className="card-title fs-2 fw-bold mb-2"><span className="project-title">{project.name}</span></h5>
+                        <h6 className="card-subtitle mb-3 text-muted mt-3">
                           {/* Switch to .map / forEach and insert badge data */}
                           <span className="project-badge badge rounded-pill bg-dark">MySQL2</span>
                           <span className="project-badge badge rounded-pill bg-dark">Sequelize</span>
@@ -145,7 +145,7 @@ const PhotoList = ({ category }) => {
                     </div>
                   </div>
 
-                  <div className="col-lg-5">
+                  <div id="projectPhotoCont" className="col-lg-5 col-sm-12 order-sm-first align-self-center">
                     {isModalOpen && <Modal onClose={toggleModal} currentPhoto={currentPhoto} />}
                     {/* <div className="flex-row"> */}
                     <div className="hovereffect">
