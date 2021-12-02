@@ -36,16 +36,16 @@ function App() {
         // setContactSelected={setContactSelected}
       ></Nav>
       <main>
-        {currentCategory == categories[0] && (
+        {currentCategory ===categories[0] && (
           <About></About>
         )}
-        {currentCategory == categories[1] && (
+        {currentCategory === categories[1] && (
           <ContactForm></ContactForm>
         )}
-        {currentCategory == categories[2] && (
+        {currentCategory === categories[2] && (
           <Gallery currentCategory={currentCategory}></Gallery>
         )}
-        {currentCategory == categories[3] && (
+        {currentCategory === categories[3] && (
           <Resume></Resume>
         )}
         {/* {!contactSelected ? (
