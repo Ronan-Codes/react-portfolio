@@ -73,9 +73,37 @@ const PhotoList = ({ category }) => {
     {
       name: 'Weather Dashboard',
       category: 'portfolio',
-      description: 'Weather Dashboard is an interactive weather application that allows a user to search a city name and the application will return various weather information. Weather Dashboard utilizes OpenWeatherMap API for acquiring weather information data. Local Storage is utilized to save pase searched cities.',
+      description: "Weather Dashboard is an interactive weather application that allows a user to search for a specific city's weather information. Weather Dashboard utilizes OpenWeatherMap API for acquiring weather data. Local Storage is utilized to save past searched cities.",
       liveUrl: 'https://ronan-codes.github.io/weather-dashboard/',
       github: 'https://github.com/Ronan-Codes/weather-dashboard.git'
+    },
+    {
+      name: 'Work Day Planner',
+      category: 'portfolio',
+      description: "Work Day Scheduler is a daily planner that saves `To-Do Lists` into a local storage. The program utilizes HTML, CSS & Bootstrap, JavaScript & jQuery, and Moment.js for time related features.",
+      liveUrl: 'https://ronan-codes.github.io/work-day-planner',
+      github: 'https://github.com/Ronan-Codes/work-day-planner.git'
+    },
+    {
+      name: 'Timed Code Quiz',
+      category: 'portfolio',
+      description: "A timed quiz for aspiring web developers built using HTML, CSS, Javascript. DOM manipulation was utilized to provide functionalites such as countdown timer, high score list, and questions appearing consequtively (which can affect the timer).",
+      liveUrl: 'https://ronan-codes.github.io/timed-code-quiz',
+      github: 'https://github.com/Ronan-Codes/timed-code-quiz.git'
+    },
+    {
+      name: 'Password Generator',
+      category: 'portfolio',
+      description: "A random password generator based on criteria provided by the user. The criteria is provided through prompts.",
+      liveUrl: 'https://ronan-codes.github.io/pasword-generator-ronan',
+      github: 'https://github.com/Ronan-Codes/pasword-generator-ronan.git'
+    },
+    {
+      name: 'Refactor-Horiseon',
+      category: 'portfolio',
+      description: "This project is a front-end refactoring of a mock marketing agency site. The goal was to improve accessibility, as well as optimize it for search engines by implementing logical structure, semantic HTML elements, alt attributes, and a succinct title.",
+      liveUrl: 'https://ronan-codes.github.io/refactor-horiseon',
+      github: 'https://github.com/Ronan-Codes/refactor-horiseon.git'
     }
   ]);
 
