@@ -116,51 +116,66 @@ const PhotoList = ({ category }) => {
 
   return (
     <div className="row justify-content-center">
-      <div className="col-lg-4">
-        <div className="card project-card text-start" >
-          <div className="card-body">
-            <h5 className="card-title fs-2 fw-bold"><span className="project-title">Self Care</span></h5>
-            <h6 className="card-subtitle mb-2 text-muted mt-1">
-              {/* Switch to .map / forEach and insert badge data */}
-              <span className="project-badge badge rounded-pill bg-dark">MySQL2</span>
-              <span className="project-badge badge rounded-pill bg-dark">Sequelize</span>
-              <span className="project-badge badge rounded-pill bg-dark">Express</span>
-              <span className="project-badge badge rounded-pill bg-dark">JavaScript</span>
-              <span className="project-badge badge rounded-pill bg-dark">JQuery</span>
-              <span className="project-badge badge rounded-pill bg-dark">Bootstrap/CSS</span>
-              <span className="project-badge badge rounded-pill bg-dark">HTML</span>
-            </h6>
-            <p className="card-text">Self-Care is a simple and convenient journaling app. It utilizes a third-party datepicker app (Zebra Datepicker) to seemlessly keep record of daily journal entries.</p>
-            <a href="#" className="card-link btn btn-warning">Site</a>
-            <a href="#" className="card-link btn btn-warning">Repo</a>
-          </div>
-        </div>
-      </div>
 
-      <div className="col-lg-5">
-        {isModalOpen && <Modal onClose={toggleModal} currentPhoto={currentPhoto} />}
-        {/* <div className="flex-row"> */}
-        <div className="hovereffect">
-          {/* {currentPhotos.map((image, i) => ( */}
-            <img
-              src={require(`../../assets/small/${category}/${0}.png`)}
-              // alt={image.name}
-              // className="img-thumbnail mx-1"
-              className="img-responsive"
-              // onClick={() => toggleModal(image, i)}
-              // key={image.name}
-            />
-          {/* ))} */}
-              <div class="overlay">
-                <h2>Effect 13</h2>
-				          <p>
-					          <a href="#">LINK HERE</a>
-				          </p>
-              </div>
-        </div>
-      </div>
+      {/* <div className="row col-lg-12 justify-content-center"> */}
 
-      
+        {projects.map((project, i) => {
+          return (
+              <>
+                <div className="row col-lg-12 justify-content-center project-border-style">
+
+                  <div className="col-lg-4">
+                    <div className="card project-card text-start" >
+                      <div className="card-body">
+                        <h5 className="card-title fs-2 fw-bold"><span className="project-title">Self Care</span></h5>
+                        <h6 className="card-subtitle mb-2 text-muted mt-1">
+                          {/* Switch to .map / forEach and insert badge data */}
+                          <span className="project-badge badge rounded-pill bg-dark">MySQL2</span>
+                          <span className="project-badge badge rounded-pill bg-dark">Sequelize</span>
+                          <span className="project-badge badge rounded-pill bg-dark">Express</span>
+                          <span className="project-badge badge rounded-pill bg-dark">JavaScript</span>
+                          <span className="project-badge badge rounded-pill bg-dark">JQuery</span>
+                          <span className="project-badge badge rounded-pill bg-dark">Bootstrap/CSS</span>
+                          <span className="project-badge badge rounded-pill bg-dark">HTML</span>
+                        </h6>
+                        <p className="card-text">{project.description}</p>
+                        <a href="#" className="card-link btn btn-warning">Site</a>
+                        <a href="#" className="card-link btn btn-warning">Repo</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col-lg-5">
+                    {isModalOpen && <Modal onClose={toggleModal} currentPhoto={currentPhoto} />}
+                    {/* <div className="flex-row"> */}
+                    <div className="hovereffect">
+                      {/* {currentPhotos.map((image, i) => ( */}
+                        <img
+                          src={require(`../../assets/images/projects/${0}.png`)}
+                          // alt={image.name}
+                          // className="img-thumbnail mx-1"
+                          className="img-responsive"
+                          // onClick={() => toggleModal(image, i)}
+                          // key={image.name}
+                        />
+                      {/* ))} */}
+                          <div class="overlay">
+                            <h2>Effect 13</h2>
+                              <p>
+                                <a href="#">LINK HERE</a>
+                              </p>
+                          </div>
+                    </div>
+                  </div>
+
+                </div>
+              </>
+          )
+        })}
+
+        
+
+      {/* </div> */}
 
     </div>
     

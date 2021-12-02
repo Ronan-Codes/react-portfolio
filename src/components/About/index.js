@@ -1,12 +1,12 @@
 import React from 'react';
-import coverImage from '../../assets/cover/profile-pic.JPG';
+import headShot from '../../assets/images/headshot/profile-pic.JPG';
 import './style.css';
 function About() {
   return (
     <section className="row justify-content-center align-items-center">
       <div className="col-4 row justify-content-center">
         <div className="col-12">
-        <img src={coverImage} className="my-2 profile-pic" style={{ width: "80%" }} alt="cover" />
+        <img src={headShot} className="my-2 profile-pic" style={{ width: "80%" }} alt="cover" />
         </div>
       </div>
 
