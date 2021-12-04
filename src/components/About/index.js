@@ -11,11 +11,11 @@ function About() {
       </div>
 
       <div className="col-6">
-        <h1 className="line-1">Ronan Galvez</h1>
+        <h1 className="line-1 about-name">Ronan Galvez</h1>
         <h4 className="line-2">Full-Stack Web Developer</h4>
 
-        <div className="my-2">
-          <p>
+        <div className="my-3">
+          <p className="about-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex
             condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna
             mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum.

@@ -19,7 +19,7 @@ function Nav(props) {
     
     <nav className="navbar navbar-expand-lg navbar-light bg-light py-0">
       <div className="container-fluid">
-        <a className="navbar-brand fs-4 hover" href="#">Ronan Galvez</a>
+        <a id="name" className="navbar-brand fs-4 hover" href="#">Ronan Galvez</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -32,7 +32,7 @@ function Nav(props) {
               // className={`mx-1 ${
               //   currentCategory.name === category.name && 'navActive'
               //   }`}
-              className="mx-1 hover text-secondary"
+              className="mx-1 hover nav-color"
               key={category.name}
             >
               <a

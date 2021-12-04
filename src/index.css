@@ -34,8 +34,19 @@ body {
   font-size: 18px;
   letter-spacing: 0.1em;
   background: rgb(226, 226, 226);
-  color: var(--dark);
-  font-family: 'Poiret One', cursive;
+  /* color: var(--dark); */
+  color: rgb(95, 95, 95);
+  /* font-family: 'Poiret One', cursive; */
+  font-family: 'Rubik', sans-serif;
+}
+
+#name {
+  /* color: rgb(78, 78, 78); */
+  color: rgb(48, 48, 48)
+}
+
+.nav-color {
+  color: rgb(134, 134, 134);
 }
 
 h1,
@@ -80,7 +91,7 @@ p {
 }
 
 a {
-  color: var(--tertiary);
+  /* color: var(--tertiary); */
   text-decoration: none;
   font-weight: bold;
 }
@@ -342,3 +353,6 @@ html {
   transition: width .3s;
 }
 
+.text-body-color {
+  color: rgb(95, 95, 95);
+}

@@ -130,17 +130,17 @@ const PhotoList = ({ category }) => {
                         <h5 className="card-title fs-2 fw-bold mb-2"><span className="project-title">{project.name}</span></h5>
                         <h6 className="card-subtitle mb-3 text-muted mt-3">
                           {/* Switch to .map / forEach and insert badge data */}
-                          <span className="project-badge badge rounded-pill bg-dark">MySQL2</span>
-                          <span className="project-badge badge rounded-pill bg-dark">Sequelize</span>
-                          <span className="project-badge badge rounded-pill bg-dark">Express</span>
-                          <span className="project-badge badge rounded-pill bg-dark">JavaScript</span>
-                          <span className="project-badge badge rounded-pill bg-dark">JQuery</span>
-                          <span className="project-badge badge rounded-pill bg-dark">Bootstrap/CSS</span>
-                          <span className="project-badge badge rounded-pill bg-dark">HTML</span>
+                          <span className="project-badge badge rounded-pill badge-color">MySQL2</span>
+                          <span className="project-badge badge rounded-pill badge-color">Sequelize</span>
+                          <span className="project-badge badge rounded-pill badge-color">Express</span>
+                          <span className="project-badge badge rounded-pill badge-color">JavaScript</span>
+                          <span className="project-badge badge rounded-pill badge-color">JQuery</span>
+                          <span className="project-badge badge rounded-pill badge-color">Bootstrap/CSS</span>
+                          <span className="project-badge badge rounded-pill badge-color">HTML</span>
                         </h6>
-                        <p className="card-text">{project.description}</p>
-                        <a href="#" className="card-link btn btn-warning">Site</a>
-                        <a href="#" className="card-link btn btn-warning">Repo</a>
+                        <p className="card-text lh-sm project-description">{project.description}</p>
+                        <a href="#" className="card-link btn btn-warning btn-style">Site</a>
+                        <a href="#" className="card-link btn btn-warning btn-style">Repo</a>
                       </div>
                     </div>
                   </div>
