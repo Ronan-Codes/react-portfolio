@@ -151,7 +151,7 @@ const PhotoList = ({ category }) => {
                     <div className="hovereffect">
                       {/* {currentPhotos.map((image, i) => ( */}
                         <img
-                          src={require(`../../assets/images/projects/${0}.png`)}
+                          src={require(`../../assets/images/projects/${i}.png`)}
                           // alt={image.name}
                           // className="img-thumbnail mx-1"
                           className="img-responsive"
