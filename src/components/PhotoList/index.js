@@ -121,7 +121,7 @@ const PhotoList = ({ category }) => {
 
         <div className="col-12 row justify-content-center">
           <div className="col-9">
-            <h1 className="portfolio-name text-sm-center text-lg-start my-3 pb-5 pb-lg-2">Portfolio</h1>
+            <h1 className="portfolio-name text-sm-center text-lg-start my-3 pb-3 pb-lg-0">Portfolio</h1>
           </div>
         </div>
       

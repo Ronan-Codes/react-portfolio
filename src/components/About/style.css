@@ -93,3 +93,13 @@ box-shadow: 3px 3px 8px -5px rgba(0,0,0,0.42);
       border-right-color: transparent;
     }
   }
+
+  @media screen and (max-width: 576px) {
+    .about-name {
+      font-size: 1.8em;
+    }
+
+    .about-title {
+      font-size: 1em;
+    }
+  }

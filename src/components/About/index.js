@@ -4,13 +4,13 @@ import './style.css';
 function About() {
   return (
     <section className="row justify-content-center align-items-center">
-      <div className="col-4 row justify-content-center">
-        <div className="col-12">
-        <img src={headShot} className="my-2 profile-pic" style={{ width: "80%" }} alt="cover" />
+      <div className="col-lg-4 row justify-content-center my-lg-0 mb-3 mt-4">
+        <div className="col-12 text-center">
+        <img src={headShot} className=" profile-pic" style={{ width: "80%" }} alt="cover" />
         </div>
       </div>
 
-      <div className="col-6">
+      <div className="col-lg-6 mb-5 text-lg-start text-center">
         <h1 className="about-name">Ronan Galvez</h1>
         <h4 className="about-title">Full-Stack Web Developer</h4>
 
