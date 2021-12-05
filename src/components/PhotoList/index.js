@@ -117,65 +117,76 @@ const PhotoList = ({ category }) => {
   return (
     <div className="row justify-content-center">
 
-      {/* <div className="row col-lg-12 justify-content-center"> */}
+      <div className="row col-lg-12 justify-content-center">
 
-        {projects.map((project, i) => {
-          return (
-              <>
-                <div className="row col-lg-12 justify-content-center project-border-style">
-
-                  <div className="col-lg-4 col-sm-12 order-sm-last order-lg-first align-self-center">
-                    <div className="card project-card text-start" >
-                      <div className="card-body">
-                        <h5 className="card-title fs-2 fw-bold mb-2"><span className="project-title">{project.name}</span></h5>
-                        <h6 className="card-subtitle mb-3 text-muted mt-3">
-                          {/* Switch to .map / forEach and insert badge data */}
-                          <span className="project-badge badge rounded-pill badge-color">MySQL2</span>
-                          <span className="project-badge badge rounded-pill badge-color">Sequelize</span>
-                          <span className="project-badge badge rounded-pill badge-color">Express</span>
-                          <span className="project-badge badge rounded-pill badge-color">JavaScript</span>
-                          <span className="project-badge badge rounded-pill badge-color">JQuery</span>
-                          <span className="project-badge badge rounded-pill badge-color">Bootstrap/CSS</span>
-                          <span className="project-badge badge rounded-pill badge-color">HTML</span>
-                        </h6>
-                        <p className="card-text lh-sm project-description">{project.description}</p>
-                        <a href="#" className="card-link btn btn-warning btn-style">Site</a>
-                        <a href="#" className="card-link btn btn-warning btn-style">Repo</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div id="projectPhotoCont" className="col-lg-5 col-sm-12 order-sm-first align-self-center">
-                    {isModalOpen && <Modal onClose={toggleModal} currentPhoto={currentPhoto} />}
-                    {/* <div className="flex-row"> */}
-                    <div className="hovereffect">
-                      {/* {currentPhotos.map((image, i) => ( */}
-                        <img
-                          src={require(`../../assets/images/projects/${i}.png`)}
-                          // alt={image.name}
-                          // className="img-thumbnail mx-1"
-                          className="img-responsive"
-                          // onClick={() => toggleModal(image, i)}
-                          // key={image.name}
-                        />
-                      {/* ))} */}
-                          <div class="overlay">
-                            <h2>Effect 13</h2>
-                              <p>
-                                <a href="#">LINK HERE</a>
-                              </p>
-                          </div>
-                    </div>
-                  </div>
-
-                </div>
-              </>
-          )
-        })}
-
+        <div className="col-12 row justify-content-center">
+          <div className="col-9">
+            <h1 className="portfolio-name text-sm-center text-lg-start my-3 pb-5 pb-lg-2">Portfolio</h1>
+          </div>
+        </div>
+      
         
 
-      {/* </div> */}
+          {projects.map((project, i) => {
+            return (
+                <>
+
+                <div className="col-12 row justify-content-center">
+                  {/* <div className="row col-lg-12 justify-content-center"> */}
+
+                    
+
+                    <div id="projectPhotoCont" className="col-lg-5 col-md-12 col-sm-12 align-self-center ">
+                      {isModalOpen && <Modal onClose={toggleModal} currentPhoto={currentPhoto} />}
+                      {/* <div className="flex-row"> */}
+                      <div className="hovereffect">
+                        {/* {currentPhotos.map((image, i) => ( */}
+                          <img
+                            src={require(`../../assets/images/projects/${i}.png`)}
+                            // alt={image.name}
+                            // className="img-thumbnail mx-1"
+                            className="img-responsive"
+                            // onClick={() => toggleModal(image, i)}
+                            // key={image.name}
+                          />
+                        {/* ))} */}
+                            <div class="overlay">
+                              <h2>Effect 13</h2>
+                                <p>
+                                  <a href="#">LINK HERE</a>
+                                </p>
+                            </div>
+                      </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-12 col-sm-12 align-self-center order-lg-first">
+                      <div className="card project-card text-start mb-5 pb-2 " >
+                        <div className="card-body px-0 text-center text-lg-start">
+                          <h5 className="card-title fs-3 mb-2 project-name"><span className="project-title">{project.name}</span></h5>
+                          <h6 className="card-subtitle mb-3 text-muted mt-3">
+                            {/* Switch to .map / forEach and insert badge data */}
+                            <span className="project-badge badge rounded-pill badge-color">MySQL2</span>
+                            <span className="project-badge badge rounded-pill badge-color">Sequelize</span>
+                            <span className="project-badge badge rounded-pill badge-color">Express</span>
+                            <span className="project-badge badge rounded-pill badge-color">JavaScript</span>
+                            <span className="project-badge badge rounded-pill badge-color">JQuery</span>
+                            <span className="project-badge badge rounded-pill badge-color">Bootstrap/CSS</span>
+                            <span className="project-badge badge rounded-pill badge-color">HTML</span>
+                          </h6>
+                          <p className="card-text lh-sm project-description">{project.description}</p>
+                          <a href="#" className="card-link btn btn-warning btn-style">Site</a>
+                          <a href="#" className="card-link btn btn-warning btn-style">Repo</a>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+                </>
+            )
+          })}
+
+
+      </div>
 
     </div>
     

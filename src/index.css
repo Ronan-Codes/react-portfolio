@@ -1,7 +1,7 @@
 main {
   margin: 0 auto;
   max-width: 90%;
-  padding: 20px 0 20px 0;
+  /* padding: 20px 0 20px 0; */
 }
 
 :root {
@@ -41,8 +41,9 @@ body {
 }
 
 #name {
-  /* color: rgb(78, 78, 78); */
-  color: rgb(48, 48, 48)
+  /* color: rgb(48, 48, 48) */
+  color: rgb(48, 48, 48);
+  font-family: 'Source Code Pro', monospace;
 }
 
 .nav-color {
@@ -77,13 +78,6 @@ h4 {
   font-size: 1.5rem;
 }
 
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1rem;
-}
 
 p {
   font-size: 1.1rem;
@@ -355,4 +349,16 @@ html {
 
 .text-body-color {
   color: rgb(95, 95, 95);
+}
+
+.about-name, .portfolio-name {
+  color: rgb(48, 48, 48);
+  font-weight: 900;
+  font-family: 'Source Code Pro', monospace;
+}
+
+@media screen and (max-width: 576px) {
+  /* main {
+    padding-top: 0;
+  } */
 }

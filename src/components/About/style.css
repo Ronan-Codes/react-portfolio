@@ -4,12 +4,6 @@
 box-shadow: 3px 3px 8px -5px rgba(0,0,0,0.42);
 }
 
-.about-name {
-  color: rgb(48, 48, 48);
-  font-weight: 900;
-  font-family: 'Source Code Pro', monospace;
-}
-
 .about-text {
   font-weight: 400;
 }
@@ -57,7 +51,7 @@ box-shadow: 3px 3px 8px -5px rgba(0,0,0,0.42);
   } */
   
   /* lin-2 */
-  .line-2 {
+  .about-title {
     border-right: solid 3px rgba(0, 255, 0, .75);
     white-space: nowrap;
     overflow: hidden;
@@ -67,7 +61,7 @@ box-shadow: 3px 3px 8px -5px rgba(0,0,0,0.42);
   }
   
   /* Animation */
-  .line-2 {
+  .about-title {
     animation: animated-text2 2s steps(15, end) 0.5s 1 normal both,
       animated-cursor2 800ms steps(15, end) infinite;
   }

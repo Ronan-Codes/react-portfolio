@@ -102,9 +102,16 @@
   /* font-family: 'Rubik', sans-serif; */
   /* font-family: 'Roboto Slab', serif; */
   /* font-family: 'Open Sans', sans-serif; */
-  font-weight: 400;
-  
+  font-weight: 400; 
 }
+
+
+
+.project-name {
+  font-family: 'Source Code Pro', monospace;
+  color: black;
+}
+
 
 .badge-color {
   background-color: rgb(48, 48, 48);

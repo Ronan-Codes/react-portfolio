@@ -11,8 +11,8 @@ function About() {
       </div>
 
       <div className="col-6">
-        <h1 className="line-1 about-name">Ronan Galvez</h1>
-        <h4 className="line-2">Full-Stack Web Developer</h4>
+        <h1 className="about-name">Ronan Galvez</h1>
+        <h4 className="about-title">Full-Stack Web Developer</h4>
 
         <div className="my-3">
           <p className="about-text">

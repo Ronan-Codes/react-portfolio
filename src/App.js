@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
-import Gallery from './components/Gallery';
+import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 
@@ -35,7 +35,7 @@ function App() {
         // contactSelected={contactSelected}
         // setContactSelected={setContactSelected}
       ></Nav>
-      <main>
+      <main className="my-lg-2 my-md-3 my-sm-0">
         {currentCategory ===categories[0] && (
           <About></About>
         )}
@@ -43,7 +43,7 @@ function App() {
           <ContactForm></ContactForm>
         )}
         {currentCategory === categories[2] && (
-          <Gallery currentCategory={currentCategory}></Gallery>
+          <Portfolio currentCategory={currentCategory}></Portfolio>
         )}
         {currentCategory === categories[3] && (
           <Resume></Resume>

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
+import './style.css'
 
 function Nav(props) {
   const {
@@ -18,9 +19,12 @@ function Nav(props) {
     <header className="">
     
     <nav className="navbar navbar-expand-lg navbar-light bg-light py-0">
-      <div className="container-fluid">
-        <a id="name" className="navbar-brand fs-4 hover" href="#">Ronan Galvez</a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <div className="container-fluid navbar-custom-style">
+        <a id="name" className="navbar-brand fs-4 hover d-sm-none d-md-inline" href="#">
+          {/* <span className="d-none d-md-inline">Ronan Galvez</span> */}
+          <span>Ronan Galvez</span>
+        </a>
+        <button className="navbar-toggler mx-2 my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
 
