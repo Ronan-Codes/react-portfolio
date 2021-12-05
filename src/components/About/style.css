@@ -11,8 +11,15 @@ box-shadow: 3px 3px 8px -5px rgba(0,0,0,0.42);
 
 
 /* Typewriter Animation */
-span{
-  animation: blinker 1s linear infinite;
+.about-title, .blinker-span {
+  font-family: 'Source Code Pro', monospace;
+  color: rgb(48, 48, 48);
+
+}
+
+.blinker-span{
+  animation: blinker 800ms steps(15, end) infinite;
+  color: #f3a847;
 }
 
 @keyframes blinker{
@@ -32,7 +39,8 @@ span{
   
   /* Animation */
   /* .about-title {
-    animation: animated-text2 2s steps(15, end) 0.5s 1 normal both,
+    animation: 
+    animated-text2 2s steps(15, end) 0.5s 1 normal both,
       animated-cursor2 800ms steps(15, end) infinite;
   } */
   

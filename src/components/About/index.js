@@ -6,19 +6,17 @@ function About() {
   var textPosition = 0;
   var speed = 100;
   // var blinker = document.createElement("span");
-  // blinker.setAttribute("id", "blinker-span")
-  // blinker.innerHTML = "|"
+  // blinker.classList.add('blinker-span')
+  // blinker.innerHTML = "|||"
 
   const typewriter = () => {
-    document.querySelector(".about-title").innerHTML = quoteArray[0].substring(0, textPosition) + '<span>\u007C</span>';
+    document.querySelector(".about-title").innerHTML = quoteArray[0].substring(0, textPosition);
   
     if(textPosition++ != quoteArray[0].length)
       setTimeout(typewriter, speed);
   }
   
   window.addEventListener("load", typewriter)
-
-  window.addEventListener("load", typewriter);
 
   return (
     <section className="row justify-content-center align-items-center">
@@ -30,8 +28,9 @@ function About() {
 
       <div className="col-lg-6 mb-5 text-lg-start text-center">
         <h1 className="about-name">Ronan Galvez</h1>
-        <h4 className="about-title">Full-Stack Web Developer</h4>
-
+        <div className="d-flex ">
+          <h4 className="about-title">Full-Stack Web Developer</h4> <h4 className="blinker-span fw-bolder"> |</h4>
+        </div>
         <div className="my-3">
           <p className="about-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex
