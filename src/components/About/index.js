@@ -2,17 +2,21 @@ import React from 'react';
 import headShot from '../../assets/images/headshot/profile-pic.JPG';
 import './style.css';
 function About() {
-  var messageArray = ["Full-Stack Web Developer"]
+  var quoteArray = ["Full-Stack Web Developer"]
   var textPosition = 0;
   var speed = 100;
+  // var blinker = document.createElement("span");
+  // blinker.setAttribute("id", "blinker-span")
+  // blinker.innerHTML = "|"
 
-  typewriter = () => {
-    document.querySelector(".about-title").
-    innerHTML = messageArray[0].substring(0, textPosition) +"<span>/u25ae</span>";
-
-    if(textPosition++ != messageArray[0].length) 
+  const typewriter = () => {
+    document.querySelector(".about-title").innerHTML = quoteArray[0].substring(0, textPosition) + '<span>\u007C</span>';
+  
+    if(textPosition++ != quoteArray[0].length)
       setTimeout(typewriter, speed);
   }
+  
+  window.addEventListener("load", typewriter)
 
   window.addEventListener("load", typewriter);
 

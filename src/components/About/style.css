@@ -11,7 +11,7 @@ box-shadow: 3px 3px 8px -5px rgba(0,0,0,0.42);
 
 
 /* Typewriter Animation */
-.about-title {
+span{
   animation: blinker 1s linear infinite;
 }
 
