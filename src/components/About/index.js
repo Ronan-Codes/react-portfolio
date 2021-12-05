@@ -2,6 +2,20 @@ import React from 'react';
 import headShot from '../../assets/images/headshot/profile-pic.JPG';
 import './style.css';
 function About() {
+  var messageArray = ["Full-Stack Web Developer"]
+  var textPosition = 0;
+  var speed = 100;
+
+  typewriter = () => {
+    document.querySelector(".about-title").
+    innerHTML = messageArray[0].substring(0, textPosition) +"<span>/u25ae</span>";
+
+    if(textPosition++ != messageArray[0].length) 
+      setTimeout(typewriter, speed);
+  }
+
+  window.addEventListener("load", typewriter);
+
   return (
     <section className="row justify-content-center align-items-center">
       <div className="col-lg-4 row justify-content-center my-lg-0 mb-3 mt-4">

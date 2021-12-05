@@ -11,68 +11,34 @@ box-shadow: 3px 3px 8px -5px rgba(0,0,0,0.42);
 
 
 /* Typewriter Animation */
+.about-title {
+  animation: blinker 1s linear infinite;
+}
 
-/* .line-1 {
-    border-right: solid 3px var(--secondary);
-    white-space: nowrap;
-    overflow: hidden;
-    font-family: 'Source Code Pro', monospace;
-    
-    color: black;
-  } */
-  
-  /* Animation */
-  /* .line-1 {
-    animation: animated-text 2s steps(15, end) 1s 1 normal both,
-      animated-cursor 800ms steps(15, end) 7;
-  } */
-  
-  /* text animation */
-  
-  /* @keyframes animated-text {
-    from {
-      width: 0;
-    }
-  
-    to {
-      width: 285px;
-    }
-  } */
-  
-  /* cursor animations */
-  /* @keyframes animated-cursor {
-    from {
-      border-right-color: var(--secondary);
-    }
-  
-    to {
-      border-right-color: transparent;
-    }
-  } */
+@keyframes blinker{
+  50%{
+    opacity: 0;
+  }
+}
   
   /* lin-2 */
-  .about-title {
+  /* .about-title {
     border-right: solid 3px rgba(0, 255, 0, .75);
     white-space: nowrap;
     overflow: hidden;
     font-family: 'Source Code Pro', monospace;
-    /* font-size: 28px; */
     color: black;
-  }
+  } */
   
   /* Animation */
-  .about-title {
+  /* .about-title {
     animation: animated-text2 2s steps(15, end) 0.5s 1 normal both,
       animated-cursor2 800ms steps(15, end) infinite;
-  }
+  } */
   
-  /* .line-1 {
-      animation-duration: 3s;
-    } */
   
-  /* text animation */
   
-  @keyframes animated-text2 {
+  /* @keyframes animated-text2 {
     from {
       width: 0;
     }
@@ -80,11 +46,11 @@ box-shadow: 3px 3px 8px -5px rgba(0,0,0,0.42);
     to {
       width: 393px;
     }
-  }
+  } */
   
   /* cursor animations */
   
-  @keyframes animated-cursor2 {
+  /* @keyframes animated-cursor2 {
     from {
       border-right-color: var(--secondary);
     }
@@ -92,7 +58,9 @@ box-shadow: 3px 3px 8px -5px rgba(0,0,0,0.42);
     to {
       border-right-color: transparent;
     }
-  }
+  } */
+
+  /* Custom Media Queries */
 
   @media screen and (max-width: 576px) {
     .about-name {
