@@ -1,22 +1,32 @@
 import React from 'react';
 import headShot from '../../assets/images/headshot/profile-pic.JPG';
 import './style.css';
-function About() {
+
+function About(props) {
+  var { currentCategory } = props;
+
   var quoteArray = ["Full-Stack Web Developer"]
   var textPosition = 0;
   var speed = 100;
-  // var blinker = document.createElement("span");
-  // blinker.classList.add('blinker-span')
-  // blinker.innerHTML = "|||"
+  
 
   const typewriter = () => {
     document.querySelector(".about-title").innerHTML = quoteArray[0].substring(0, textPosition);
+    
   
-    if(textPosition++ != quoteArray[0].length)
+    if(textPosition++ !== quoteArray[0].length)
       setTimeout(typewriter, speed);
   }
   
   window.addEventListener("load", typewriter)
+
+  console.log(currentCategory)
+
+  // if (currentCategory.name === "about me") {
+  //   typewriter()
+  // } 
+
+  
 
   return (
     <section className="row justify-content-center align-items-center">
@@ -29,7 +39,8 @@ function About() {
       <div className="col-lg-6 mb-5 text-lg-start text-center">
         <h1 className="about-name">Ronan Galvez</h1>
         <div className="d-flex justify-content-lg-start justify-content-center title-container">
-          <h4 className="about-title">Full-Stack Web Developer</h4> <h4 className="blinker-span fw-bolder">|</h4>
+          {/* <h4 className="about-title" dangerouslySetInnerHTML={markup}></h4> <h4 className="blinker-span fw-bolder">|</h4> */}
+          <h4 className="about-title"></h4> <h4 className="blinker-span fw-bolder">|</h4>
         </div>
         <div className="my-3">
           <p className="about-text">

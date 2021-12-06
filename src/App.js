@@ -37,7 +37,7 @@ function App() {
       ></Nav>
       <main className="my-lg-2 my-md-3 my-sm-0">
         {currentCategory ===categories[0] && (
-          <About></About>
+          <About currentCategory={currentCategory}></About>
         )}
         {currentCategory === categories[1] && (
           <ContactForm></ContactForm>
