@@ -28,8 +28,8 @@ function About() {
 
       <div className="col-lg-6 mb-5 text-lg-start text-center">
         <h1 className="about-name">Ronan Galvez</h1>
-        <div className="d-flex ">
-          <h4 className="about-title">Full-Stack Web Developer</h4> <h4 className="blinker-span fw-bolder"> |</h4>
+        <div className="d-flex justify-content-lg-start justify-content-center title-container">
+          <h4 className="about-title">Full-Stack Web Developer</h4> <h4 className="blinker-span fw-bolder">|</h4>
         </div>
         <div className="my-3">
           <p className="about-text">

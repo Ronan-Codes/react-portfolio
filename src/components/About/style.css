@@ -18,8 +18,9 @@ box-shadow: 3px 3px 8px -5px rgba(0,0,0,0.42);
 }
 
 .blinker-span{
-  animation: blinker 800ms steps(15, end) infinite;
+  animation: blinker 800ms steps(1, end) infinite;
   color: #f3a847;
+  position: relative;
 }
 
 @keyframes blinker{
@@ -75,7 +76,7 @@ box-shadow: 3px 3px 8px -5px rgba(0,0,0,0.42);
       font-size: 1.8em;
     }
 
-    .about-title {
+    .about-title, .blinker-span {
       font-size: 1em;
     }
   }
