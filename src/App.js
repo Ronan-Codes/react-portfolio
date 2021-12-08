@@ -35,7 +35,7 @@ function App() {
         // contactSelected={contactSelected}
         // setContactSelected={setContactSelected}
       ></Nav>
-      <main className="my-lg-2 my-md-3 my-sm-0">
+      <main className="my-lg-5 my-md-3 my-0">
         {currentCategory ===categories[0] && (
           <About currentCategory={currentCategory}></About>
         )}
@@ -48,15 +48,6 @@ function App() {
         {currentCategory === categories[3] && (
           <Resume></Resume>
         )}
-        {/* {!contactSelected ? (
-          <>
-            <About></About>
-            <Gallery currentCategory={currentCategory}></Gallery>
-            <Resume></Resume>
-          </>
-        ) : (
-          <ContactForm></ContactForm>
-        )} */}
       </main>
 
       <footer>

@@ -14,9 +14,9 @@ function About(props) {
   
   var { currentCategory } = props;
 
-  const handleType = (count: number) => {
-    // access word count number
-    console.log(count)}
+  // const handleType = (count: number) => {
+  //   // access word count number
+  //   console.log(count)}
   
 
   const handleDone = () => {
@@ -35,6 +35,7 @@ function About(props) {
         <h1 className="about-name">Ronan Galvez</h1>
         <div className="d-flex justify-content-lg-start justify-content-center title-container">
           
+          {/* Other version of typewriter */}
           {/* <h4 className="about-title">
             <WindupChildren >
               <Pause ms={11000}/>
@@ -49,7 +50,7 @@ function About(props) {
           <h4 className="about-title">
             <span id="typewriter-span" className="border-none p-0 m-0">
             <Typewriter
-              words={['Full-Stack', 'Front-End']}
+              words={['Front-End','Full-Stack']}
               loop={0}
               cursor
               cursorStyle='|'
@@ -57,7 +58,7 @@ function About(props) {
               deleteSpeed={90}
               delaySpeed={1000}
               onLoopDone={handleDone}
-              onType={handleType}
+              // onType={handleType}
             />
             </span>
             <span className="p-0 m-0">Web Developer</span>
