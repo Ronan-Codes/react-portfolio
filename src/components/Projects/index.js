@@ -9,6 +9,7 @@ const Projects = ({ category }) => {
   const [projects] = useState([
     {
       name: "Pic'd Up",
+      technology: ['React.js', 'MongoDB', 'Express', 'Node.js', 'GraphQL', 'JWT'],
       category: 'portfolio',
       description: "Pic'd Up is a portfolio hosting site specifically made for photographers. The simple and clean design makes it easy for photographers to showcase their work and even easier for clients to search for a photographer they need.",
       liveUrl: 'https://evening-refuge-82542.herokuapp.com/',
@@ -16,6 +17,7 @@ const Projects = ({ category }) => {
     },
     {
       name: "Shop-Shop",
+      technology: ['React.js', 'Redux', 'Stripe', 'MongoDB', 'Apollo', 'Express', 'IndexedDB', 'GraphQL', 'JWT'],
       category: 'portfolio',
       description: "An E-commerce platform where users can create an account, login, add/remove items from cart, checkout orders via stripe, as well as view order history. Context API was initially used for the application's state management with React, which is then refactored to utilize Redux.",
       liveUrl: 'https://shop-shop-ronancodes.herokuapp.com/',
@@ -23,6 +25,7 @@ const Projects = ({ category }) => {
     },
     {
       name: "Book for You",
+      technology: ['React.js', 'MongoDB', 'Apollo', 'Express', 'GraphQL', 'Heroku', 'Bootstrap CSS', 'jwt-decode', 'JWT', 'bcrypt'],
       category: 'portfolio',
       description: "A book search engine that allows users to login and catalog their book searches. This app utilizes Apollo Server to use GraphQl, replacing an existing RESTful API.",
       liveUrl: 'https://book-for-you-ronancodes.herokuapp.com/',
@@ -30,6 +33,7 @@ const Projects = ({ category }) => {
     },
     {
       name: 'Budget Tracker',
+      technology: ['MongoDB', 'Express', 'Service Workers', 'IndexedDB', 'Manifest', 'Heroku', 'JS'],
       category: 'portfolio',
       description: 'Utilizing IndexedDB and service-workers, this budget tracker app was refactored to provide offline access & functionality to users.',
       liveUrl: 'https://ronan-budget-tracker.herokuapp.com/',
@@ -37,6 +41,7 @@ const Projects = ({ category }) => {
     },
     {
       name: 'Self-Care',
+      technology: ['Zebra Datepicker', 'MySQL 2', 'bcrypt', 'dotenv', 'Express', 'Sequelize', 'JS', 'Bootstrap CSS'],
       category: 'portfolio',
       description: 'Self-Care is a simple and convenient journaling app. It utilizes a third-party datepicker app (Zebra Datepicker) to seemlessly keep record of daily journal entries.',
       liveUrl: 'https://ronan-codes-self-care.herokuapp.com/',
@@ -44,6 +49,7 @@ const Projects = ({ category }) => {
     },
     {
       name: 'Tech Blog',
+      technology: ['MySQL 2', 'Express', 'Sequelize', 'bcrypt', 'dotenv', 'JS', 'Bootstrap CSS'],
       category: 'portfolio',
       description: 'The Tech Blog allows developers to publish blog posts that other users can comment on. When logged in, users can update or delete their own posts. This is a CMS-style blog, much like a Wordpress site.',
       liveUrl: 'https://ronan-codes-cms-tech-blog.herokuapp.com/',
@@ -51,6 +57,7 @@ const Projects = ({ category }) => {
     },
     {
       name: 'Note Taker',
+      technology: ['Express', 'UUID', 'Bootstrap CSS', 'HTML'],
       category: 'portfolio',
       description: 'Note Taker is your standard note-taking application that allows to you create, save, and delete notes. This application utilizes Express.js to retrieve, create, and delete data from a JSON.file.',
       liveUrl: 'https://ronan-note-taker.herokuapp.com/',
@@ -58,6 +65,7 @@ const Projects = ({ category }) => {
     },
     {
       name: 'DateNite',
+      technology: ['Meal API','Cocktail API', 'JS','Bulma CSS','HTML'],
       category: 'portfolio',
       description: 'DateNite simplifies the process of deciding what to do for date night. Simply provide a primary ingredient, and DateNite provides easy-to-make recipes for your ideal date night, dine-in meal and cocktail.',
       liveUrl: 'https://justpuzey.github.io/DateNite/',
@@ -65,6 +73,7 @@ const Projects = ({ category }) => {
     },
     {
       name: 'Run Buddy',
+      technology: ['CSS', 'HTML'],
       category: 'portfolio',
       description: 'Run Buddy is a mock website for a fitness service company. Plain HTML and CSS is utilized to create the layout and various form elements.',
       liveUrl: 'https://ronan-codes.github.io/run-buddy/',
@@ -72,6 +81,7 @@ const Projects = ({ category }) => {
     },
     {
       name: 'Weather Dashboard',
+      technology: ['Open Weather API','JS','jQuery','CSS','HTML','Moment.js'],
       category: 'portfolio',
       description: "Weather Dashboard is an interactive weather application that allows a user to search for a specific city's weather information. Weather Dashboard utilizes OpenWeatherMap API for acquiring weather data. Local Storage is utilized to save past searched cities.",
       liveUrl: 'https://ronan-codes.github.io/weather-dashboard/',
@@ -79,6 +89,7 @@ const Projects = ({ category }) => {
     },
     {
       name: 'Work Day Planner',
+      technology: ['JS','jQuery','CSS','HTML','Moment.js'],
       category: 'portfolio',
       description: "Work Day Scheduler is a daily planner that saves `To-Do Lists` into a local storage. The program utilizes HTML, CSS & Bootstrap, JavaScript & jQuery, and Moment.js for time related features.",
       liveUrl: 'https://ronan-codes.github.io/work-day-planner',
@@ -86,6 +97,7 @@ const Projects = ({ category }) => {
     },
     {
       name: 'Timed Code Quiz',
+      technology: ['JS','CSS','HTML'],
       category: 'portfolio',
       description: "A timed quiz for aspiring web developers built using HTML, CSS, Javascript. DOM manipulation was utilized to provide functionalites such as countdown timer, high score list, and questions appearing consequtively (which can affect the timer).",
       liveUrl: 'https://ronan-codes.github.io/timed-code-quiz',
@@ -93,6 +105,7 @@ const Projects = ({ category }) => {
     },
     {
       name: 'Password Generator',
+      technology: ['JS','CSS','HTML'],
       category: 'portfolio',
       description: "A random password generator based on criteria provided by the user. The criteria is provided through prompts.",
       liveUrl: 'https://ronan-codes.github.io/pasword-generator-ronan',
@@ -100,6 +113,7 @@ const Projects = ({ category }) => {
     },
     {
       name: 'Refactor-Horiseon',
+      technology: ['CSS', 'HTML'],
       category: 'portfolio',
       description: "This project is a front-end refactoring of a mock marketing agency site. The goal was to improve accessibility, as well as optimize it for search engines by implementing logical structure, semantic HTML elements, alt attributes, and a succinct title.",
       liveUrl: 'https://ronan-codes.github.io/refactor-horiseon',
@@ -164,14 +178,11 @@ const Projects = ({ category }) => {
                         <div className="card-body px-0 text-center text-lg-start">
                           <h5 className="card-title fs-3 mb-2 project-name"><span className="project-title">{project.name}</span></h5>
                           <h6 className="card-subtitle mb-3 text-muted mt-3">
-                            {/* Switch to .map / forEach and insert badge data */}
-                            <span className="project-badge badge rounded-pill badge-color">MySQL2</span>
-                            <span className="project-badge badge rounded-pill badge-color">Sequelize</span>
-                            <span className="project-badge badge rounded-pill badge-color">Express</span>
-                            <span className="project-badge badge rounded-pill badge-color">JavaScript</span>
-                            <span className="project-badge badge rounded-pill badge-color">JQuery</span>
-                            <span className="project-badge badge rounded-pill badge-color">Bootstrap/CSS</span>
-                            <span className="project-badge badge rounded-pill badge-color">HTML</span>
+                          {project.technology.map((technology, i) => {
+                            return(
+                            <span className="project-badge badge rounded-pill badge-color">{technology}</span>
+                            )
+                          })}
                           </h6>
                           <p className="card-text lh-sm project-description">{project.description}</p>
                           <a href="#" className="card-link btn btn-warning btn-style">Site</a>
