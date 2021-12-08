@@ -14,10 +14,14 @@ box-shadow: 3px 3px 8px -5px rgba(0,0,0,0.42);
 .about-title, .blinker-span {
   font-family: 'Source Code Pro', monospace;
   color: rgb(48, 48, 48);
-
 }
 
-.blinker-span{
+#typewriter-span:first-child {
+  color: #ce8e3b;
+  /* font-weight: bold; */
+}
+
+/* .blinker-span{
   animation: blinker 800ms steps(1, end) infinite;
   color: #f3a847;
   position: relative;
@@ -27,56 +31,16 @@ box-shadow: 3px 3px 8px -5px rgba(0,0,0,0.42);
   50%{
     opacity: 0;
   }
-}
-  
-  /* lin-2 */
-  /* .about-title {
-    border-right: solid 3px rgba(0, 255, 0, .75);
-    white-space: nowrap;
-    overflow: hidden;
-    font-family: 'Source Code Pro', monospace;
-    color: black;
-  } */
-  
-  /* Animation */
-  /* .about-title {
-    animation: 
-    animated-text2 2s steps(15, end) 0.5s 1 normal both,
-      animated-cursor2 800ms steps(15, end) infinite;
-  } */
-  
-  
-  
-  /* @keyframes animated-text2 {
-    from {
-      width: 0;
-    }
-  
-    to {
-      width: 393px;
-    }
-  } */
-  
-  /* cursor animations */
-  
-  /* @keyframes animated-cursor2 {
-    from {
-      border-right-color: var(--secondary);
-    }
-  
-    to {
-      border-right-color: transparent;
-    }
-  } */
+} */
 
-  /* Custom Media Queries */
+/* Custom Media Queries */
 
-  @media screen and (max-width: 576px) {
-    .about-name {
-      font-size: 1.8em;
-    }
-
-    .about-title, .blinker-span {
-      font-size: 1em;
-    }
+@media screen and (max-width: 576px) {
+  .about-name {
+    font-size: 1.8em;
   }
+
+  .about-title, .blinker-span {
+    font-size: 1em;
+  }
+}

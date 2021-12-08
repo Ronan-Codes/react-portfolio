@@ -5,12 +5,23 @@ import './style.css';
 // import {useWindupString} from "windups";
 import { Pace, WindupChildren, Pause} from "windups"
 
+import { Typewriter } from 'react-simple-typewriter'
+
 function About(props) {
   // const [titleText] = useWindupString("Full-Stack Web Developer", {
   //   pace: (char) => (char === " " ? 0 : 90),
   // });
   
   var { currentCategory } = props;
+
+  const handleType = (count: number) => {
+    // access word count number
+    console.log(count)}
+  
+
+  const handleDone = () => {
+    console.log(`Done after 5 loops!`)
+  }
 
   return (
     <section className="row justify-content-center align-items-center">
@@ -24,7 +35,7 @@ function About(props) {
         <h1 className="about-name">Ronan Galvez</h1>
         <div className="d-flex justify-content-lg-start justify-content-center title-container">
           
-          <h4 className="about-title">
+          {/* <h4 className="about-title">
             <WindupChildren >
               <Pause ms={11000}/>
               <Pace getPace={(char) => (char === " " ? 0 : 90)}>
@@ -33,8 +44,26 @@ function About(props) {
               </Pace>
             </WindupChildren>
           </h4>
-          {/* <h4 className="about-title">Web Developer</h4> */}
-          <h4 className="blinker-span fw-bolder">|</h4>
+          <h4 className="blinker-span fw-bolder">|</h4> */}
+
+          <h4 className="about-title">
+            <span id="typewriter-span" className="border-none p-0 m-0">
+            <Typewriter
+              words={['Full-Stack', 'Front-End']}
+              loop={0}
+              cursor
+              cursorStyle='|'
+              typeSpeed={100}
+              deleteSpeed={90}
+              delaySpeed={1000}
+              onLoopDone={handleDone}
+              onType={handleType}
+            />
+            </span>
+            <span className="p-0 m-0">Web Developer</span>
+          </h4>
+          {/* <h4 className="about-title">&nbsp;Web Developer</h4> */}
+          
           
 
         </div>
