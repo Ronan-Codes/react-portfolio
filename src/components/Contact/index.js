@@ -1,40 +1,45 @@
 import React, { useState } from 'react';
-
-import { validateEmail } from '../../utils/helpers';
+// import { validateEmail } from '../../utils/helpers';
+import "./style.css"
+import { Typewriter } from 'react-simple-typewriter';
 
 function ContactForm() {
-  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+  // const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
-  const [errorMessage, setErrorMessage] = useState('');
-  const { name, email, message } = formState;
+  // const [errorMessage, setErrorMessage] = useState('');
+  // const { name, email, message } = formState;
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!errorMessage) {
-      console.log('Submit Form', formState);
-    }
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   if (!errorMessage) {
+  //     console.log('Submit Form', formState);
+  //   }
+  // };
 
-  const handleChange = (e) => {
-    if (e.target.name === 'email') {
-      const isValid = validateEmail(e.target.value);
-      if (!isValid) {
-        setErrorMessage('Your email is invalid.');
-      } else {
-        setErrorMessage('');
-      }
-    } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
-      } else {
-        setErrorMessage('');
-      }
-    }
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log('Handle Form', formState);
-    }
-  };
+  // const handleChange = (e) => {
+  //   if (e.target.name === 'email') {
+  //     const isValid = validateEmail(e.target.value);
+  //     if (!isValid) {
+  //       setErrorMessage('Your email is invalid.');
+  //     } else {
+  //       setErrorMessage('');
+  //     }
+  //   } else {
+  //     if (!e.target.value.length) {
+  //       setErrorMessage(`${e.target.name} is required.`);
+  //     } else {
+  //       setErrorMessage('');
+  //     }
+  //   }
+  //   if (!errorMessage) {
+  //     setFormState({ ...formState, [e.target.name]: e.target.value });
+  //     console.log('Handle Form', formState);
+  //   }
+  // };
+
+  const handleDone = () => {
+    // console.log(`Done after 5 loops!`)
+  }
 
   return (
     <div className="row justify-content-center">
@@ -42,61 +47,79 @@ function ContactForm() {
 
         <div className="col-12 row justify-content-center">
             <div className="col-9">
-              <h1 className="portfolio-name text-sm-center text-lg-start my-3 pb-3 pb-lg-0">Contact</h1>
+              <h1 className="portfolio-name text-center text-lg-start my-3 pb-md-3 pb-0 pb-lg-0 page-header">
+              <Typewriter
+                words={['Hire me!']}
+                loop={1}
+                cursor
+                cursorStyle='|'
+                typeSpeed={100}
+                deleteSpeed={90}
+                delaySpeed={1000}
+                onLoopDone={handleDone}
+                // onType={handleType}
+              />
+              </h1>
             </div>
         </div>
 
-        <div className="col-9 row justify-content-center mt-5">
-
-          <div className="col-3 align-self-center text-center">
-            <img
-              src={require(`../../assets/logos/linkedin.png`)} alt="Linkedin logo"
-            />
-            {/* <div className="col-6 justify-content-center">
-              <img
-                src={require(`../../assets/logos/linkedin.png`)} alt="Linkedin logo"
-              />
-            </div> */}
-          </div>
-
-          <div className="col-3 align-self-center text-center">
-            <img
-              src={require(`../../assets/logos/linkedin.png`)} alt="Linkedin logo"
-            />
-          </div>
-
-          <div className="col-3 align-self-center text-center">
-            <img
-              src={require(`../../assets/logos/linkedin.png`)} alt="Linkedin logo"
-            />
-          </div>
-
-          <div className="col-3 align-self-center text-center">
-            <img
-              src={require(`../../assets/logos/linkedin.png`)} alt="Linkedin logo"
-            />
-          </div>
+        <div className="col-12 row justify-content-center mt-lg-5">
           
-          {/* <form id="contact-form" onSubmit={handleSubmit}>
-            <div>
-              <label htmlFor="name">Name:</label>
-              <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-            </div>
-            <div>
-              <label htmlFor="email">Email address:</label>
-              <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-            </div>
-            <div>
-              <label htmlFor="message">Message:</label>
-              <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-            </div>
-            {errorMessage && (
-              <div>
-                <p className="error-text">{errorMessage}</p>
+          <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
+            <div className="col-12 rounded-circle row justify-content-center align-content-center">
+              <div className="img-container bg-white border border-dark d-flex justify-content-center align-items-center rounded-circle">
+                <img
+                  src={require(`../../assets/logos/linkedin.png`)} className="img-width" alt="Linkedin logo"
+                />
               </div>
-            )}
-            <button data-testid="button" type="submit">Submit</button>
-          </form> */}
+                <h6 className="contact-font-size mt-2">LinkedIn</h6>
+            </div>
+          </div>
+
+          <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
+            <div className="col-12 rounded-circle row justify-content-center align-content-center">
+              <div className="img-container bg-white border border-dark d-flex justify-content-center align-items-center rounded-circle">
+                <img
+                  src={require(`../../assets/logos/email.png`)} className="img-width" alt="Linkedin logo"
+                />
+              </div>
+                <h6 className="contact-font-size mt-2">GitHub</h6>
+            </div>
+          </div>
+
+          <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
+            <div className="col-12 rounded-circle row justify-content-center align-content-center">
+              <div className="img-container bg-white border border-dark d-flex justify-content-center align-items-center rounded-circle">
+                <img
+                  src={require(`../../assets/logos/email.png`)} className="img-width" alt="Linkedin logo"
+                />
+              </div>
+                <h6 className="contact-font-size mt-2">ronancodes@gmail.com</h6>
+            </div>
+          </div>
+
+          <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
+            <div className="col-12 rounded-circle row justify-content-center align-content-center">
+              <div className="img-container bg-white border border-dark d-flex justify-content-center align-items-center rounded-circle">
+                <img
+                  src={require(`../../assets/logos/phone.png`)} className="img-width" alt="Linkedin logo"
+                />
+              </div>
+                <h6 className="contact-font-size mt-2">+1-352-328-7698</h6>
+            </div>
+          </div>
+
+          {/* <div className="col-3 align-self-center text-center justify-content-center row">
+            <div className="col-12 rounded-circle row justify-content-center align-content-center">
+              <div className="img-container bg-white border border-dark d-flex justify-content-center align-items-center rounded-circle">
+                <img
+                  src={require(`../../assets/logos/github-solid-gray.png`)} className="img-width" alt="Linkedin logo"
+                />
+                </div>
+                <p>GitHub</p>
+            </div>
+          </div> */}
+        
         </div>
 
       </div>

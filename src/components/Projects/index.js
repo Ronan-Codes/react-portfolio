@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from '../Modal';
+import { Typewriter } from 'react-simple-typewriter';
 import "./style.css"
 
 const Projects = ({ category }) => {
@@ -128,6 +129,10 @@ const Projects = ({ category }) => {
     setIsModalOpen(!isModalOpen);
   };
 
+  const handleDone = () => {
+    // console.log(`Done after 5 loops!`)
+  }
+
   return (
     <div className="row justify-content-center">
 
@@ -135,7 +140,19 @@ const Projects = ({ category }) => {
 
         <div className="col-12 row justify-content-center">
           <div className="col-9">
-            <h1 className="portfolio-name text-sm-center text-lg-start my-3 pb-3 pb-lg-0">Portfolio</h1>
+            <h1 className="portfolio-name text-sm-center text-lg-start my-3 pb-3 pb-lg-0 page-header">
+              <Typewriter
+                words={['Portfolio']}
+                loop={1}
+                cursor
+                cursorStyle='|'
+                typeSpeed={100}
+                deleteSpeed={90}
+                delaySpeed={1000}
+                onLoopDone={handleDone}
+                // onType={handleType}
+              />
+            </h1>
           </div>
         </div>
       

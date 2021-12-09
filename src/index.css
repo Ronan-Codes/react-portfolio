@@ -356,3 +356,7 @@ html {
   font-weight: 900;
   font-family: 'Source Code Pro', monospace;
 }
+
+.page-header {
+  color: #ce8e3b;
+}

@@ -1,0 +1,26 @@
+.img-container {
+    width: 80px;
+    height: 80px;
+}
+
+.img-width {
+    width: 80%
+}
+
+/* Changing Typewriter cursor to custom */
+/* .border-cursor:first-child {
+    animation: blinkTextCursor 500ms steps(44) infinite normal;
+    border-right: 2px solid 
+}
+
+@keyframes blinkTextCursor{
+    from{border-right-color: #ce8e3b;}
+    to{border-right-color: transparent;}
+} */
+
+@media screen and (max-width: 576px) {
+    .contact-font-size {
+        font-size: 1rem;
+    }
+}
+
