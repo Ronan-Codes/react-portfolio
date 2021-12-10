@@ -3,6 +3,9 @@ import React, { useState } from 'react';
 import "./style.css"
 import { Typewriter } from 'react-simple-typewriter';
 
+import resumePdf from '../../assets/resume/codingResume.pdf';
+
+
 function ContactForm() {
   // const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
@@ -43,10 +46,10 @@ function ContactForm() {
 
   return (
     <div className="row justify-content-center">
-      <div className="row col-lg-12 justify-content-center">
+      <div className="row col-lg-12 col-xxl-11 justify-content-center">
 
         <div className="col-12 row justify-content-center">
-            <div className="col-9">
+            <div className="col-10">
               <h1 className="portfolio-name text-center text-lg-start my-3 pb-md-3 pb-0 pb-lg-0 page-header">
               <Typewriter
                 words={['Hire me!']}
@@ -72,7 +75,7 @@ function ContactForm() {
                   src={require(`../../assets/logos/linkedin.png`)} className="img-width" alt="Linkedin logo"
                 />
               </div>
-                <h6 className="contact-font-size mt-2">LinkedIn</h6>
+                <h6 className="body-text mt-2">LinkedIn</h6>
             </div>
           </div>
 
@@ -83,7 +86,7 @@ function ContactForm() {
                   src={require(`../../assets/logos/email.png`)} className="img-width" alt="Linkedin logo"
                 />
               </div>
-                <h6 className="contact-font-size mt-2">GitHub</h6>
+                <h6 className="body-text mt-2">GitHub</h6>
             </div>
           </div>
 
@@ -94,7 +97,7 @@ function ContactForm() {
                   src={require(`../../assets/logos/email.png`)} className="img-width" alt="Linkedin logo"
                 />
               </div>
-                <h6 className="contact-font-size mt-2">ronancodes@gmail.com</h6>
+                <h6 className="body-text mt-2">ronancodes@gmail.com</h6>
             </div>
           </div>
 
@@ -105,7 +108,8 @@ function ContactForm() {
                   src={require(`../../assets/logos/phone.png`)} className="img-width" alt="Linkedin logo"
                 />
               </div>
-                <h6 className="contact-font-size mt-2">+1-352-328-7698</h6>
+                <h6 className="body-text mt-2">+1-352-328-7698</h6>
+                <a id="resume" className="" href = {resumePdf} target="_blank">Resume</a>
             </div>
           </div>
 

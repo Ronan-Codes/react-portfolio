@@ -32,7 +32,7 @@ function About(props) {
       </div>
 
       <div className="col-lg-6 mb-5 text-lg-start text-center">
-        <h1 className="about-name">Ronan Galvez</h1>
+        <h1 className="about-name mb-0 pb-0">Ronan Galvez</h1>
         <div className="d-flex justify-content-lg-start justify-content-center title-container">
           
           {/* Other version of typewriter */}
@@ -47,7 +47,7 @@ function About(props) {
           </h4>
           <h4 className="blinker-span fw-bolder">|</h4> */}
 
-          <h4 className="about-title">
+          <h4 className="about-title mt-0">
             <span id="typewriter-span" className="border-none p-0 m-0">
             <Typewriter
               words={['Front-End','Full-Stack']}
@@ -69,7 +69,7 @@ function About(props) {
 
         </div>
         <div className="my-3">
-          <p className="about-text">
+          <p className="about-text body-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex
             condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna
             mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum.

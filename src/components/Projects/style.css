@@ -128,20 +128,3 @@ box-shadow: 2px 6px 10px -5px rgba(0,0,0,0.48);
   -webkit-box-shadow: 2px 6px 10px -5px rgba(0,0,0,0.48); 
 box-shadow: 2px 6px 10px -5px rgba(0,0,0,0.48);
 }
-
-
-/* .project-border-style::after {
-  content: "";
-  display: block;
-  margin: 0 auto;
-  width: 80%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.891);
-  order: 9;
-} */
-
-/* 
-@media screen and (max-width: 576px) {
-#projectPhotoCont{
-  order: 1;
-}
-} */

@@ -1,6 +1,5 @@
 import React from 'react';
-import resume from "../../assets/Resume/ronanGalvezResume.pdf";
-// import "./style.css";
+import resume from "../../assets/resume/codingResume.pdf"
 
 function Resume() {
     return(

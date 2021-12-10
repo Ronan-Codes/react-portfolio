@@ -136,11 +136,11 @@ const Projects = ({ category }) => {
   return (
     <div className="row justify-content-center">
 
-      <div className="row col-lg-12 justify-content-center">
+      <div className="row col-lg-12 col-xxl-11 justify-content-center ">
 
         <div className="col-12 row justify-content-center">
-          <div className="col-9">
-            <h1 className="portfolio-name text-sm-center text-lg-start my-3 pb-3 pb-lg-0 page-header">
+          <div className="col-10">
+            <h1 className="portfolio-name text-center text-lg-start my-3 pb-3 pb-lg-0 page-header">
               <Typewriter
                 words={['Portfolio']}
                 loop={1}
@@ -162,12 +162,12 @@ const Projects = ({ category }) => {
             return (
                 <>
 
-                <div className="col-12 row justify-content-center">
+                <div className="col-12 row justify-content-center mb-xxl-5 ">
                   {/* <div className="row col-lg-12 justify-content-center"> */}
 
                     
 
-                    <div id="projectPhotoCont" className="col-lg-5 col-md-12 col-sm-12 align-self-center ">
+                    <div id="projectPhotoCont" className="col-lg-5 col-md-8 col-sm-12 align-self-center ">
                       {isModalOpen && <Modal onClose={toggleModal} currentPhoto={currentPhoto} />}
                       {/* <div className="flex-row"> */}
                       <div className="hovereffect">
@@ -190,8 +190,8 @@ const Projects = ({ category }) => {
                       </div>
                     </div>
 
-                    <div className="col-lg-4 col-md-12 col-sm-12 align-self-center order-lg-first">
-                      <div className="card project-card text-start mb-5 pb-2 " >
+                    <div className="col-lg-5 col-md-12 col-sm-12 align-self-center align-self-lg-start order-lg-first mb-xxl-0 pb-xxl-0 mb-5 pb-2 ">
+                      <div className="card project-card text-start " >
                         <div className="card-body px-0 text-center text-lg-start">
                           <h5 className="card-title fs-3 mb-2 project-name"><span className="project-title">{project.name}</span></h5>
                           <h6 className="card-subtitle mb-3 text-muted mt-3">
@@ -201,7 +201,7 @@ const Projects = ({ category }) => {
                             )
                           })}
                           </h6>
-                          <p className="card-text lh-sm project-description">{project.description}</p>
+                          <p className="card-text lh-sm project-description body-text">{project.description}</p>
                           <a href="#" className="card-link btn btn-warning btn-style">Site</a>
                           <a href="#" className="card-link btn btn-warning btn-style">Repo</a>
                         </div>

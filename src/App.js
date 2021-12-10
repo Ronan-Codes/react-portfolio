@@ -51,7 +51,7 @@ function App() {
       </main>
 
       <footer>
-        <div className="icons">
+        <div className="footer-icons">
           <a href="https://github.com/Ronan-Codes" targer="_blank" rel="noreferrer" title="GitHub">
             GitHub
           </a>
