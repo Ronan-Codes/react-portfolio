@@ -70,12 +70,19 @@ function ContactForm() {
           
           <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
             <div className="col-12 rounded-circle row justify-content-center align-content-center">
+
               <div className="img-container bg-white border border-dark d-flex justify-content-center align-items-center rounded-circle">
                 <img
                   src={require(`../../assets/logos/linkedin.png`)} className="img-width" alt="Linkedin logo"
                 />
               </div>
-                <h6 className="body-text mt-2">LinkedIn</h6>
+                {/* <h6 className="body-text mt-2">LinkedIn</h6> */}
+                <h6 className="body-text mt-2">
+                  <a href="https://www.linkedin.com/in/ronan-galvez-08aaa81a8" target="_blank" rel="noopener noreferrer" className="contactLink">
+                    LinkedIn
+                  </a>
+                </h6>
+
             </div>
           </div>
 
@@ -86,7 +93,11 @@ function ContactForm() {
                   src={require(`../../assets/logos/email.png`)} className="img-width" alt="Linkedin logo"
                 />
               </div>
-                <h6 className="body-text mt-2">GitHub</h6>
+                <h6 className="body-text mt-2">
+                  <a href="https://github.com/Ronan-Codes" target="_blank" rel="noopener noreferrer" className="contactLink">
+                    GitHub
+                  </a>
+                </h6>
             </div>
           </div>
 
@@ -97,7 +108,11 @@ function ContactForm() {
                   src={require(`../../assets/logos/email.png`)} className="img-width" alt="Linkedin logo"
                 />
               </div>
-                <h6 className="body-text mt-2">ronancodes@gmail.com</h6>
+                <h6 className="body-text mt-2">
+                  <a href="mailto:galv.ronan@gmail.com" className="contactLink">
+                    ronancodes.gmail.com
+                  </a>
+                </h6>
             </div>
           </div>
 
@@ -108,8 +123,12 @@ function ContactForm() {
                   src={require(`../../assets/logos/phone.png`)} className="img-width" alt="Linkedin logo"
                 />
               </div>
-                <h6 className="body-text mt-2">+1-352-328-7698</h6>
-                <a id="resume" className="" href = {resumePdf} target="_blank">Resume</a>
+                <h6 className="body-text mt-2">
+                  <a href="tel:+1-352-328-7698" className="contactLink">
+                    +1-352-328-7698
+                  </a>
+                </h6>
+                {/* <a id="resume" className="" href = {resumePdf} target="_blank">Resume</a> */}
             </div>
           </div>
 

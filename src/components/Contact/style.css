@@ -1,10 +1,15 @@
 .img-container {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
 }
 
 .img-width {
     width: 80%
+}
+
+.contactLink, .contactLink:hover, .contactLink:focus, .contactLink:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Changing Typewriter cursor to custom */
@@ -17,4 +22,11 @@
     from{border-right-color: #ce8e3b;}
     to{border-right-color: transparent;}
 } */
+
+@media screen and (max-width: 576px) {
+    .img-container {
+        width: 80px;
+        height: 80px;
+    }
+}
 
