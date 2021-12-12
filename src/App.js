@@ -5,6 +5,8 @@ import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 
+import './darkMode.scss'
+
 function App() {
   const [categories] = useState([
     {

@@ -1,7 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 import './style.css'
 import resumePdf from '../../assets/resume/codingResume.pdf';
+
+import DarkModeToggle from "react-dark-mode-toggle";
+import useDarkMode from 'use-dark-mode';
 
 
 function Nav(props) {
@@ -29,14 +32,34 @@ function Nav(props) {
 
   const resume = resumePdf
 
+  const [isDarkMode, setIsDarkMode] = useState(() => false);
+  const darkMode = useDarkMode(false);
+
   return (
     <header className="">
     
-    <nav className="navbar navbar-expand-lg navbar-light bg-light py-0">
-      <div className="container-fluid navbar-custom-style">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light py-0 navBgColor">
+      <div className="container-fluid navBgColor">
         <a id="name" className="navbar-brand fs-4 hover d-sm-none d-md-inline" href="#">
           {/* <span className="d-none d-md-inline">Ronan Galvez</span> */}
-          <span>Ronan Galvez</span>
+          <span>Ronan Galvez
+          <DarkModeToggle
+            onChange={setIsDarkMode, darkMode.toggle}
+            checked={isDarkMode, darkMode.value}
+            size={40}
+            className='toggle'
+            onClick={darkMode.disable}
+
+            // checked={darkMode.value} onChange={darkMode.toggle}
+          />
+          </span>
+          {/* <span>
+          <DarkModeToggle
+            onChange={setIsDarkMode}
+            checked={isDarkMode}
+            size={40}
+          />
+          </span> */}
         </a>
         <button className="navbar-toggler mx-2 my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>

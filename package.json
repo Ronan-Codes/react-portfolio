@@ -4,10 +4,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-dark-mode-toggle": "^0.2.0",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "react-simple-typewriter": "^3.0.1",
+    "use-dark-mode": "^2.3.1",
     "windups": "^1.1.9"
   },
   "scripts": {

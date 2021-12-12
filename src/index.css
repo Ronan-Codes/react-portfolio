@@ -358,7 +358,10 @@ html {
 }
 
 .page-header {
-  color: #ce8e3b;
+  /* color: #ce8e3b; */
+  color: #f3a847; 
+
+  /* color: #ffc881;  */
 }
 
 a:visited {
@@ -374,3 +377,15 @@ html {
     font-size: 1rem;
   }
 }
+
+/* body.dark-mode {
+  background-color: rgb(23, 42, 68);
+  color: rgb(204, 214, 245);
+  color: rgb(136, 145, 176);
+
+  .page-header {
+    color: rgb(204, 214, 245);
+  }
+} */
+
+/* .about-name,  */

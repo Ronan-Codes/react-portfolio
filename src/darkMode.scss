@@ -1,0 +1,30 @@
+body.dark-mode {
+    /* color: rgb(204, 214, 245); */
+    background-color: rgb(10, 25, 47);
+    color: rgb(136, 145, 176);
+
+    .page-header, .about-title, .about-name, #name, .nav-color {
+        color: rgb(204, 214, 245);
+    }
+
+    .navActive, #typewriter-span {
+        color: rgb(100, 255, 217)
+    }
+
+    .navBgColor {
+        background-color: rgb(23, 42, 68);
+
+    }
+
+    // .img-container, .jm-logo2 div:after {
+    //     background-color: rgb(39, 72, 118);
+    //     background-color: #f3a847;
+    // }
+
+    .img-container {
+        // background-color: #f3a847;
+        background-color: #66dada;
+
+    }
+
+}

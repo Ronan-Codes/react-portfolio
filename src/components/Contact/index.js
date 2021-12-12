@@ -4,6 +4,7 @@ import "./style.css"
 import { Typewriter } from 'react-simple-typewriter';
 
 import resumePdf from '../../assets/resume/codingResume.pdf';
+import './mysass.scss';
 
 
 function ContactForm() {
@@ -68,7 +69,7 @@ function ContactForm() {
 
         <div className="col-12 row justify-content-center mt-lg-5">
           
-          <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
+          {/* <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
             <div className="col-12 rounded-circle row justify-content-center align-content-center">
 
               <div className="img-container bg-white border border-dark d-flex justify-content-center align-items-center rounded-circle">
@@ -76,7 +77,6 @@ function ContactForm() {
                   src={require(`../../assets/logos/linkedin.png`)} className="img-width" alt="Linkedin logo"
                 />
               </div>
-                {/* <h6 className="body-text mt-2">LinkedIn</h6> */}
                 <h6 className="body-text mt-2">
                   <a href="https://www.linkedin.com/in/ronan-galvez-08aaa81a8" target="_blank" rel="noopener noreferrer" className="contactLink">
                     LinkedIn
@@ -84,16 +84,36 @@ function ContactForm() {
                 </h6>
 
             </div>
+          </div> */}
+
+          <div className="hover-raise col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
+            <div className="jm-logo2 col-12 rounded-circle row justify-content-center align-content-center">
+              <div className="img-container  d-flex justify-content-center align-items-center rounded-circle">
+              <span className=''>
+                <img
+                  src={require(`../../assets/logos/linkedin.png`)} className="img-width" alt="=Linkedin logo"
+                />
+              </span>
+              </div>
+                <h6 className="body-text mt-3">
+                  <a href="https://www.linkedin.com/in/ronan-galvez-08aaa81a8" target="_blank" rel="noopener noreferrer" className="contactLink">
+                    LinkedIn
+                  </a>
+                </h6>
+            </div>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
-            <div className="col-12 rounded-circle row justify-content-center align-content-center">
-              <div className="img-container bg-white border border-dark d-flex justify-content-center align-items-center rounded-circle">
+          {/* original */}
+          <div className="hover-raise col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
+            <div className="jm-logo2 col-12 rounded-circle row justify-content-center align-content-center">
+              <div className="img-container  d-flex justify-content-center align-items-center rounded-circle">
+              <span>
                 <img
-                  src={require(`../../assets/logos/email.png`)} className="img-width" alt="Linkedin logo"
+                  src={require(`../../assets/logos/github2.svg`)} className=" github-img request-span" alt="Linkedin logo"
                 />
+              </span>
               </div>
-                <h6 className="body-text mt-2">
+                <h6 className="body-text mt-3">
                   <a href="https://github.com/Ronan-Codes" target="_blank" rel="noopener noreferrer" className="contactLink">
                     GitHub
                   </a>
@@ -101,7 +121,7 @@ function ContactForm() {
             </div>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
+          {/* <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
             <div className="col-12 rounded-circle row justify-content-center align-content-center">
               <div className="img-container bg-white border border-dark d-flex justify-content-center align-items-center rounded-circle">
                 <img
@@ -114,11 +134,45 @@ function ContactForm() {
                   </a>
                 </h6>
             </div>
+          </div> */}
+
+          <div className="hover-raise col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
+            <div className="jm-logo2 col-12 rounded-circle row justify-content-center align-content-center">
+              <div className="img-container  d-flex justify-content-center align-items-center rounded-circle">
+              <span className=''>
+                <img
+                  src={require(`../../assets/logos/email.png`)} className="img-width" alt="=Email logo"
+                />
+              </span>
+              </div>
+                <h6 className="body-text mt-3">
+                  <a href="mailto:galv.ronan@gmail.com" target="_blank" rel="noopener noreferrer" className="contactLink">
+                    ronancodes.gmail.com
+                  </a>
+                </h6>
+            </div>
           </div>
 
-          <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
+          <div className="hover-raise col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
+            <div className="jm-logo2 col-12 rounded-circle row justify-content-center align-content-center">
+              <div className="img-container  d-flex justify-content-center align-items-center rounded-circle">
+              <span className='jm-logo'>
+                <img
+                  src={require(`../../assets/logos/phone.png`)} className="img-width" alt="Phone logo"
+                />
+              </span>
+              </div>
+                <h6 className="body-text mt-3">
+                  <a href="tel:+1-352-328-7698" target="_blank" rel="noopener noreferrer" className="contactLink">
+                    +1-352-328-7698 
+                  </a>
+                </h6>
+            </div>
+          </div>
+
+          {/* <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
             <div className="col-12 rounded-circle row justify-content-center align-content-center">
-              <div className="img-container bg-white border border-dark d-flex justify-content-center align-items-center rounded-circle">
+              <div className="jm-logo img-container bg-white border border-dark d-flex justify-content-center align-items-center rounded-circle">
                 <img
                   src={require(`../../assets/logos/phone.png`)} className="img-width" alt="Linkedin logo"
                 />
@@ -128,9 +182,9 @@ function ContactForm() {
                     +1-352-328-7698
                   </a>
                 </h6>
-                {/* <a id="resume" className="" href = {resumePdf} target="_blank">Resume</a> */}
+                <a id="resume" className="" href = {resumePdf} target="_blank">Resume</a>
             </div>
-          </div>
+          </div> */}
 
           {/* <div className="col-3 align-self-center text-center justify-content-center row">
             <div className="col-12 rounded-circle row justify-content-center align-content-center">
