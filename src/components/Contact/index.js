@@ -111,6 +111,7 @@ function ContactForm() {
                 <img
                   src={require(`../../assets/logos/github2.svg`)} className=" github-img request-span" alt="Linkedin logo"
                 />
+                {/* <i class="fab fa-github logo1-size"></i> */}
               </span>
               </div>
                 <h6 className="body-text mt-3">
