@@ -48,4 +48,15 @@ body.dark-mode {
         color: rgb(10, 25, 47);
     }
 
+    .footer-links {
+        color: rgb(136, 145, 176);
+    }
+
+    .footer-links:hover {
+        color: #66dada;
+    }
+
+    .hover::after {
+        background: rgb(215, 224, 252);
+    }
 }

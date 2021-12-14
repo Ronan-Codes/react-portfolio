@@ -38,7 +38,7 @@ function Nav(props) {
   return (
     <header className="">
     
-    <nav className="navbar navbar-expand-lg navbar-light bg-light py-0 navBgColor">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light py-0">
       <div className="container-fluid navBgColor">
         <a id="name" className="navbar-brand fs-4 hover d-sm-none d-md-inline" href="#">
           {/* <span className="d-none d-md-inline">Ronan Galvez</span> */}

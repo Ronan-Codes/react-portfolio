@@ -164,7 +164,7 @@ function ContactForm() {
               </span>
               </div>
                 <h6 className="body-text mt-3">
-                  <a href="tel:+1-352-328-7698" target="_blank" rel="noopener noreferrer" className="contactLink">
+                  <a href="tel:+1-352-328-7698" rel="noopener noreferrer" className="contactLink">
                     +1-352-328-7698 
                   </a>
                 </h6>

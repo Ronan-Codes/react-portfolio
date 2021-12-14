@@ -6,6 +6,7 @@ import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 
 import './darkMode.scss'
+import resumePdf from './assets/resume/codingResume.pdf';
 
 function App() {
   const [categories] = useState([
@@ -52,16 +53,20 @@ function App() {
         )}
       </main>
 
-      <footer>
-        <div className="footer-icons">
-          <a href="https://github.com/Ronan-Codes" targer="_blank" rel="noreferrer" title="GitHub">
-            GitHub
+      <footer className='bg-light'>
+        <div className="footer-icons navBgColor py-1">
+          <a className='footer-links' href="https://www.linkedin.com/in/ronan-galvez-08aaa81a8" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <i class="fab fa-linkedin fs-3"></i>
           </a>
-          <a href="https://www.linkedin.com/in/ronan-galvez-08aaa81a8" targer="_blank" rel="noreferrer" title="GitHub">
-            LinkedIn
+          <a className='footer-links' href="https://github.com/Ronan-Codes" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <i class="fab fa-github fs-3"></i>
+            {/* main-color? */}
           </a>
-          <a href="https://stackoverflow.com/users/16479419/ronan-codes" targer="_blank" rel="noreferrer" title="GitHub">
-            Stack
+          <a className='footer-links' href="mailto:galv.ronan@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
+            <i class="fas fa-envelope-square fs-3"></i>
+          </a>
+          <a className='footer-links' href={resumePdf} target="_blank" rel="noopener noreferrer" title="Resume">
+            <i class="fas fa-file fs-3"></i>
           </a>
         </div>
       </footer>
