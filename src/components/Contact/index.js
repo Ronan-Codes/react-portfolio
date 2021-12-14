@@ -86,12 +86,12 @@ function ContactForm() {
             </div>
           </div> */}
 
-          <div className="hover-raise col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
+          <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
             <div className="jm-logo2 col-12 rounded-circle row justify-content-center align-content-center">
-              <div className="img-container  d-flex justify-content-center align-items-center rounded-circle">
-              <span className=''>
+              <div className="img-container  d-flex justify-content-center align-items-center rounded-circle contact-cont">
+              <span className='contact-logo'>
                 <img
-                  src={require(`../../assets/logos/linkedin.png`)} className="img-width" alt="=Linkedin logo"
+                  src={require(`../../assets/logos/linkedin.png`)} className="img-width" alt="=Linkedin link"
                 />
               </span>
               </div>
@@ -104,12 +104,12 @@ function ContactForm() {
           </div>
 
           {/* original */}
-          <div className="hover-raise col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
+          <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
             <div className="jm-logo2 col-12 rounded-circle row justify-content-center align-content-center">
-              <div className="img-container  d-flex justify-content-center align-items-center rounded-circle">
-              <span>
+              <div className="img-container  d-flex justify-content-center align-items-center rounded-circle contact-cont">
+              <span className='contact-logo'>
                 <img
-                  src={require(`../../assets/logos/github2.svg`)} className=" github-img request-span" alt="Linkedin logo"
+                  src={require(`../../assets/logos/github2.svg`)} className=" github-img request-span" alt="Ghub link"
                 />
                 {/* <i class="fab fa-github logo1-size"></i> */}
               </span>
@@ -137,12 +137,12 @@ function ContactForm() {
             </div>
           </div> */}
 
-          <div className="hover-raise col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
+          <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
             <div className="jm-logo2 col-12 rounded-circle row justify-content-center align-content-center">
-              <div className="img-container  d-flex justify-content-center align-items-center rounded-circle">
+              <div className="img-container  d-flex justify-content-center align-items-center rounded-circle contact-cont email-cont">
               <span className=''>
                 <img
-                  src={require(`../../assets/logos/email.png`)} className="img-width" alt="=Email logo"
+                  src={require(`../../assets/logos/email.png`)} className="img-width email-photo" alt="=Email link"
                 />
               </span>
               </div>
@@ -154,12 +154,12 @@ function ContactForm() {
             </div>
           </div>
 
-          <div className="hover-raise col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
+          <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
             <div className="jm-logo2 col-12 rounded-circle row justify-content-center align-content-center">
-              <div className="img-container  d-flex justify-content-center align-items-center rounded-circle">
-              <span className='jm-logo'>
+              <div className="img-container  d-flex justify-content-center align-items-center rounded-circle phone-cont">
+              <span className='phone-logo'>
                 <img
-                  src={require(`../../assets/logos/phone.png`)} className="img-width" alt="Phone logo"
+                  src={require(`../../assets/logos/phone.png`)} className="img-width" alt="Phone link"
                 />
               </span>
               </div>

@@ -181,11 +181,18 @@ const Projects = ({ category }) => {
                             // key={image.name}
                           />
                         {/* ))} */}
-                            <div class="overlay">
-                              <h2>Effect 13</h2>
-                                <p>
-                                  <a href="#">LINK HERE</a>
-                                </p>
+                            <div class="overlay row align-items-center justify-content-center border-0">
+                              {/* <h2>Effect 13</h2> */}
+                                {/* <p> */}
+                                {/* <div className='row align-items-center justify-content-center'> */}
+                                  <div className='col-6'><a href={project.liveUrl} target="_blank" rel="noopener noreferrer"><i class="fas fa-link fs-1 main-color lighter-yellow"></i></a></div>
+                                  {/* <div className='col-6'><a href={project.github} target="_blank" rel="noopener noreferrer"><i class="fab fa-github fs-1 main-color"></i></a></div> */}
+                                  <div className='col-6'><a href={project.github} target="_blank" rel="noopener noreferrer"><i class="fas fa-code-branch fs-1 main-color lighter-yellow"></i></a></div>
+
+                                {/* </div> */}
+                                {/* </p> */}
+                              
+
                             </div>
                       </div>
                     </div>
@@ -197,13 +204,19 @@ const Projects = ({ category }) => {
                           <h6 className="card-subtitle mb-3 text-muted mt-3">
                           {project.technology.map((technology, i) => {
                             return(
-                            <span className="project-badge badge rounded-pill badge-color">{technology}</span>
+                            <span className="badge rounded-pill badge-color me-1 mb-1">{technology}</span>
                             )
                           })}
                           </h6>
                           <p className="card-text lh-sm project-description body-text">{project.description}</p>
-                          <a href="#" className="card-link btn btn-warning btn-style">Site</a>
-                          <a href="#" className="card-link btn btn-warning btn-style">Repo</a>
+                          <div>
+                            <a href={project.liveUrl} className="card-link btn btn-warning btn-sm btn-style col-md-2 col-3" target="_blank" rel="noopener noreferrer">Site</a>
+                            <a href={project.github} className="card-link btn btn-warning btn-sm btn-style col-md-2 col-3" target="_blank" rel="noopener noreferrer">Repo</a>
+                            {/* <a href={project.liveUrl} target="_blank" rel="noopener noreferrer"><i class="fas fa-link fs-2 main-color col-md-2 col-3"></i></a>
+                            <a href={project.github} target="_blank" rel="noopener noreferrer"><i class="fab fa-github fs-2 main-color col-md-2 col-3"></i></a>
+                            <a href={project.github} target="_blank" rel="noopener noreferrer"><i class="fas fa-code-merge fs-2 main-color col-md-2 col-3"></i></a> */}
+
+                          </div>
                         </div>
                       </div>
                     </div>

@@ -94,10 +94,6 @@
   color: rgb(48, 48, 48)
 }
 
-.project-badge {
-  margin: 0 2px 2px 0
-}
-
 .project-description {
   /* font-family: 'Rubik', sans-serif; */
   /* font-family: 'Roboto Slab', serif; */
@@ -124,10 +120,10 @@ box-shadow: 2px 6px 10px -5px rgba(0,0,0,0.48);
   
 }
 
-.btn-style {
+/* .btn-style {
   -webkit-box-shadow: 2px 6px 10px -5px rgba(0,0,0,0.48); 
 box-shadow: 2px 6px 10px -5px rgba(0,0,0,0.48);
-}
+} */
 
 
 /* .project-border-style::after {

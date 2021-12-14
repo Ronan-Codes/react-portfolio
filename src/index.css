@@ -296,8 +296,12 @@ a {
   margin-right: -2px;
 }
 
-.navActive {
+.main-color {
   color: var(--secondary);
+}
+
+.lighter-yellow {
+  color: #ffc107;
 }
 
 footer {
@@ -359,6 +363,7 @@ html {
 
 .page-header {
   /* color: #ce8e3b; */
+  /* color: #3d3d3d;  */
   color: #f3a847; 
 
   /* color: #ffc881;  */

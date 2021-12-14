@@ -165,13 +165,13 @@ const PhotoList = ({ category }) => {
                           <h5 className="card-title fs-3 mb-2 project-name"><span className="project-title">{project.name}</span></h5>
                           <h6 className="card-subtitle mb-3 text-muted mt-3">
                             {/* Switch to .map / forEach and insert badge data */}
-                            <span className="project-badge badge rounded-pill badge-color">MySQL2</span>
-                            <span className="project-badge badge rounded-pill badge-color">Sequelize</span>
-                            <span className="project-badge badge rounded-pill badge-color">Express</span>
-                            <span className="project-badge badge rounded-pill badge-color">JavaScript</span>
-                            <span className="project-badge badge rounded-pill badge-color">JQuery</span>
-                            <span className="project-badge badge rounded-pill badge-color">Bootstrap/CSS</span>
-                            <span className="project-badge badge rounded-pill badge-color">HTML</span>
+                            <span className="badge rounded-pill badge-color">MySQL2</span>
+                            <span className="badge rounded-pill badge-color">Sequelize</span>
+                            <span className="badge rounded-pill badge-color">Express</span>
+                            <span className="badge rounded-pill badge-color">JavaScript</span>
+                            <span className="badge rounded-pill badge-color">JQuery</span>
+                            <span className="badge rounded-pill badge-color">Bootstrap/CSS</span>
+                            <span className="badge rounded-pill badge-color">HTML</span>
                           </h6>
                           <p className="card-text lh-sm project-description">{project.description}</p>
                           <a href="#" className="card-link btn btn-warning btn-style">Site</a>

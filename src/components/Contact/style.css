@@ -30,9 +30,9 @@
 }
 
 /* hover effects */
-.jm-logo img:hover, 
-.jm-logo img:focus, 
-.jm-logo img:active {
+.phone-cont:hover img, 
+.phone-cont:focus img, 
+.phone-cont:active img {
 	-webkit-animation-name: buzz;
 	animation-name: buzz;
 	-webkit-animation-duration: 0.15s;
@@ -125,18 +125,39 @@
 	transition-property: transform;
 }
 
-.jm-logo2:hover, 
+/* upward hover effect */
+/* .jm-logo2:hover, 
 .jm-logo2:focus, 
 .jm-logo2:active {
 	-o-transform: translateY(-10px);
 	-ms-transform: translateY(-10px);
 	-webkit-transform: translateY(-10px);
 	transform: translateY(-10px);
-}
+} */
+
 
 /* .img-container {
-    border: 5px solid black
+    border: 5px solid rgb(228, 228, 228)
 } */
+
+/* rotate logo */
+.contact-logo {
+	position: relative;
+	transition: .5s;
+}
+
+.contact-cont:hover span,
+.contact-cont:focus span,
+.contact-cont:active span {
+	transform: rotateY(360deg);
+}
+
+/* email hover open */
+.email-cont:hover img,
+.email-cont:focus img,
+.email-cont:active img {
+	content: url('../../assets/logos/email-open-gray.png');
+}
 
 @media screen and (max-width: 576px) {
     .img-container {

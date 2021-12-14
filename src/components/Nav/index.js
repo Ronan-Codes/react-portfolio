@@ -78,7 +78,7 @@ function Nav(props) {
                     setCurrentCategory(categories[i]);
                     ;
                   }}
-                  className={currentCategory.name === categories[i].name && 'navActive'}
+                  className={currentCategory.name === categories[i].name && 'main-color'}
                 >
                   {capitalizeFirstLetter(category.name)}
                 </a>
@@ -94,7 +94,7 @@ function Nav(props) {
                   //   setCurrentCategory(currentCategory.name);
                   //   ;
                   // }}
-                  className={currentCategory.name === categories[3].name && 'navActive'}
+                  className={currentCategory.name === categories[3].name && 'main-color'}
                   href={resume} target="_blank" rel="noopener noreferrer"
                 >
                   Resume
@@ -112,7 +112,7 @@ function Nav(props) {
                     setCurrentCategory(categories[i]);
                     ;
                   }}
-                  className={currentCategory.name === categories[i].name && 'navActive'}
+                  className={currentCategory.name === categories[i].name && 'main-color'}
                 >
                   {capitalizeFirstLetter(category.name)}
                 </a>
@@ -129,7 +129,7 @@ function Nav(props) {
           {/* {categories.map((category, i) => (
             <li
               // className={`mx-1 ${
-              //   currentCategory.name === category.name && 'navActive'
+              //   currentCategory.name === category.name && 'main-color'
               //   }`}
               className="mx-1"
               key={category.name}
@@ -139,7 +139,7 @@ function Nav(props) {
                   setCurrentCategory(categories[i]);
                   ;
                 }}
-                className={currentCategory.name === categories[i].name && 'navActive'}
+                className={currentCategory.name === categories[i].name && 'main-color'}
               >
                 {capitalizeFirstLetter(category.name)}
               </a>
