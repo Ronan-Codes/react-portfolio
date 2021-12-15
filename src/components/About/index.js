@@ -2,26 +2,14 @@ import React from 'react';
 import headShot from '../../assets/images/headshot/profile-pic.JPG';
 import './style.css';
 
-// import {useWindupString} from "windups";
-import { Pace, WindupChildren, Pause} from "windups"
-
 import { Typewriter } from 'react-simple-typewriter'
 
-function About(props) {
-  // const [titleText] = useWindupString("Full-Stack Web Developer", {
-  //   pace: (char) => (char === " " ? 0 : 90),
-  // });
-  
+function About(props) {  
   var { currentCategory } = props;
 
-  // const handleType = (count: number) => {
-  //   // access word count number
-  //   console.log(count)}
-  
-
-  const handleDone = () => {
-    // console.log(`Done after 5 loops!`)
-  }
+  // const handleDone = () => {
+  //   console.log(`Done after 5 loops!`)
+  // }
 
   return (
     <section className="row justify-content-center align-items-center">
@@ -34,18 +22,6 @@ function About(props) {
       <div className="col-lg-6 mb-5 text-lg-start text-center">
         <h1 className="about-name mb-0 pb-0">Ronan Galvez</h1>
         <div className="d-flex justify-content-lg-start justify-content-center title-container">
-          
-          {/* Other version of typewriter */}
-          {/* <h4 className="about-title">
-            <WindupChildren >
-              <Pause ms={11000}/>
-              <Pace getPace={(char) => (char === " " ? 0 : 90)}>
-              <Pause ms={1100}/>
-                {"Full-Stack Web Developer"}
-              </Pace>
-            </WindupChildren>
-          </h4>
-          <h4 className="blinker-span fw-bolder">|</h4> */}
 
           <h4 className="about-title mt-0">
             <span id="typewriter-span" className="border-none p-0 m-0">
@@ -57,16 +33,13 @@ function About(props) {
               typeSpeed={100}
               deleteSpeed={90}
               delaySpeed={1000}
-              onLoopDone={handleDone}
+              // onLoopDone={handleDone}
               // onType={handleType}
             />
             </span>
             <span className="p-0 m-0">Web Developer</span>
           </h4>
-          {/* <h4 className="about-title">&nbsp;Web Developer</h4> */}
           
-          
-
         </div>
         <div className="my-3">
           <p className="about-text body-text">

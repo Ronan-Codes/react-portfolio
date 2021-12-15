@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
-import './style.css'
 import resumePdf from '../../assets/resume/codingResume.pdf';
 
 import DarkModeToggle from "react-dark-mode-toggle";
@@ -11,9 +10,7 @@ function Nav(props) {
   const {
     categories = [],
     setCurrentCategory,
-    currentCategory,
-    contactSelected,
-    setContactSelected,
+    currentCategory
   } = props;
 
   var threeCategories = categories.slice(0,3)
@@ -21,14 +18,6 @@ function Nav(props) {
   useEffect(() => {
     document.title = capitalizeFirstLetter(currentCategory.name);
   }, [currentCategory]);
-
-  function isResume(currentCategory) {
-    if (currentCategory === "resume") {
-      return (
-        `href={resumePdf} target="_blank"`
-      )
-    }
-  }
 
   const resume = resumePdf
 
@@ -38,120 +27,80 @@ function Nav(props) {
   return (
     <header className="">
     
-    <nav className="navbar navbar-expand-lg navbar-light bg-light py-0">
-      <div className="container-fluid navBgColor">
-        <a id="name" className="navbar-brand fs-4 hover d-sm-none d-md-inline" href="#">
-          {/* <span className="d-none d-md-inline">Ronan Galvez</span> */}
-          <span>Ronan Galvez
-          {/* <p className='d-absolute'> */}
-          <DarkModeToggle
-            onChange={setIsDarkMode, darkMode.toggle}
-            checked={isDarkMode, darkMode.value}
-            size={40}
-            className='position-absolute ms-2 mt-1'
-            onClick={darkMode.disable}
+      <nav className="navbar navbar-expand-lg navbar-light bg-light py-0">
+        <div className="container-fluid navBgColor">
+          <a id="name" className="navbar-brand fs-4 hover d-sm-none d-md-inline" href="#">
+            <span>Ronan Galvez
+              <DarkModeToggle
+                onChange={setIsDarkMode, darkMode.toggle}
+                checked={isDarkMode, darkMode.value}
+                size={40}
+                className='position-absolute ms-2 mt-1'
+                onClick={darkMode.disable}
+              />
+            </span>
+          </a>
+          <button className="navbar-toggler mx-2 my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
 
-            // checked={darkMode.value} onChange={darkMode.toggle}
-          />
-          </span>
-          {/* </p> */}
-          {/* <span>
-          <DarkModeToggle
-            onChange={setIsDarkMode}
-            checked={isDarkMode}
-            size={40}
-          />
-          </span> */}
-        </a>
-        <button className="navbar-toggler mx-2 my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav ms-auto">
 
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-
-            {threeCategories.map((category, i) => (
-              <li
-                className="mx-1 hover nav-color"
-                key={category.name}
-              >
-                <a
-                  onClick={() => {
-                    setCurrentCategory(categories[i]);
-                    ;
-                  }}
-                  className={currentCategory.name === categories[i].name && 'main-color'}
+              {threeCategories.map((category, i) => (
+                <li
+                  className="mx-1 hover nav-color"
+                  key={category.name}
                 >
-                  {capitalizeFirstLetter(category.name)}
-                </a>
-              </li>
-            ))}
-          
-              <li
-                className="mx-1 hover nav-color"
-                key="resume"
-              >
-                <a
-                  // onClick={() => {
-                  //   setCurrentCategory(currentCategory.name);
-                  //   ;
-                  // }}
-                  className={currentCategory.name === categories[3].name && 'main-color'}
-                  href={resume} target="_blank" rel="noopener noreferrer"
+                  <a
+                    onClick={() => {
+                      setCurrentCategory(categories[i]);
+                      ;
+                    }}
+                    className={currentCategory.name === categories[i].name && 'main-color'}
+                  >
+                    {capitalizeFirstLetter(category.name)}
+                  </a>
+                </li>
+              ))}
+            
+                <li
+                  className="mx-1 hover nav-color"
+                  key="resume"
                 >
-                  Resume
-                </a>
-              </li>
+                  <a
+                    className={currentCategory.name === categories[3].name && 'main-color'}
+                    href={resume} target="_blank" rel="noopener noreferrer"
+                  >
+                    Resume
+                  </a>
+                </li>
 
-            {/* Use if you want to use Resume component instead/again. Not my preference */}
-            {/* {categories.map((category, i) => (
-              <li
-                className="mx-1 hover nav-color"
-                key={category.name}
-              >
-                <a
-                  onClick={() => {
-                    setCurrentCategory(categories[i]);
-                    ;
-                  }}
-                  className={currentCategory.name === categories[i].name && 'main-color'}
+              {/* Use if you want to use Resume component instead/again. Not my preference */}
+              {/* {categories.map((category, i) => (
+                <li
+                  className="mx-1 hover nav-color"
+                  key={category.name}
                 >
-                  {capitalizeFirstLetter(category.name)}
-                </a>
-              </li>
-            ))} */}
+                  <a
+                    onClick={() => {
+                      setCurrentCategory(categories[i]);
+                      ;
+                    }}
+                    className={currentCategory.name === categories[i].name && 'main-color'}
+                  >
+                    {capitalizeFirstLetter(category.name)}
+                  </a>
+                </li>
+              ))} */}
 
-          </ul>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>  
-      
-
-
-          {/* {categories.map((category, i) => (
-            <li
-              // className={`mx-1 ${
-              //   currentCategory.name === category.name && 'main-color'
-              //   }`}
-              className="mx-1"
-              key={category.name}
-            >
-              <a
-                onClick={() => {
-                  setCurrentCategory(categories[i]);
-                  ;
-                }}
-                className={currentCategory.name === categories[i].name && 'main-color'}
-              >
-                {capitalizeFirstLetter(category.name)}
-              </a>
-            </li>
-          ))} */}
+      </nav>  
 
     </header>
   );
 }
 
 export default Nav;
-
-// href={resumePdf} target="_blank"

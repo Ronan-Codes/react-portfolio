@@ -3,7 +3,12 @@ body.dark-mode {
     background-color: rgb(10, 25, 47);
     color: rgb(136, 145, 176);
 
-    .about-title, .about-name, #name, .nav-color, .project-title, .page-header {
+    .about-title,
+    .about-name,
+    #name,
+    .nav-color,
+    .project-title,
+    .page-header {
         color: rgb(204, 214, 245);
     }
 
@@ -19,7 +24,8 @@ body.dark-mode {
         color: rgb(10, 25, 47);
     }
 
-    .main-color, #typewriter-span {
+    .main-color,
+    #typewriter-span {
         // color: rgb(100, 255, 217);
         color: #66dada;
     }

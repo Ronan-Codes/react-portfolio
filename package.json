@@ -10,8 +10,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "react-simple-typewriter": "^3.0.1",
-    "use-dark-mode": "^2.3.1",
-    "windups": "^1.1.9"
+    "use-dark-mode": "^2.3.1"
   },
   "scripts": {
     "start": "react-scripts start",

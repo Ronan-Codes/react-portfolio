@@ -29,14 +29,12 @@ body {
   font-size: 18px;
   letter-spacing: 0.05em;
   background: rgb(226, 226, 226);
-  /* color: var(--dark); */
   color: rgb(95, 95, 95);
   /* font-family: 'Poiret One', cursive; */
   font-family: 'Rubik', sans-serif;
 }
 
 #name {
-  /* color: rgb(48, 48, 48) */
   color: rgb(48, 48, 48);
   font-family: 'Source Code Pro', monospace;
 }
@@ -84,10 +82,6 @@ a {
   text-decoration: none;
   font-weight: bold;
 }
-
-/* a:hover {
-  text-decoration: underline;
-} */
 
 header {
   background: var(--dark);
@@ -335,10 +329,6 @@ html {
   padding: 10px;
 }
 
-.hover a:hover {
-  color: var(--secondary);
-}
-
 .hover::after {
   content: '';
   display: block;
@@ -367,7 +357,6 @@ html {
   /* color: #ce8e3b; */
   /* color: #3d3d3d;  */
   color: #f3a847; 
-
   /* color: #ffc881;  */
 }
 
@@ -379,24 +368,8 @@ html {
   overflow-y: scroll;
 }
 
-/* .logo1-size {
-  font-size: 4rem;
-} */
-
 @media screen and (max-width: 576px) {
   .body-text {
     font-size: 1rem;
   }
 }
-
-/* body.dark-mode {
-  background-color: rgb(23, 42, 68);
-  color: rgb(204, 214, 245);
-  color: rgb(136, 145, 176);
-
-  .page-header {
-    color: rgb(204, 214, 245);
-  }
-} */
-
-/* .about-name,  */

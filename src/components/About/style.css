@@ -1,17 +1,16 @@
 .profile-pic {
-    border-radius: 50%;
-    -webkit-box-shadow: 3px 3px 8px -5px rgba(0,0,0,0.42); 
-box-shadow: 3px 3px 8px -5px rgba(0,0,0,0.42);
+  border-radius: 50%;
+  -webkit-box-shadow: 3px 3px 8px -5px rgba(0, 0, 0, 0.42);
+  box-shadow: 3px 3px 8px -5px rgba(0, 0, 0, 0.42);
 }
 
 .about-text {
   font-weight: 400;
 }
 
-
-
 /* Typewriter Animation */
-.about-title, .blinker-span {
+.about-title,
+.blinker-span {
   font-family: 'Source Code Pro', monospace;
   color: rgb(48, 48, 48);
 }
@@ -21,20 +20,6 @@ box-shadow: 3px 3px 8px -5px rgba(0,0,0,0.42);
   /* font-weight: bold; */
 }
 
-/* .blinker-span{
-  animation: blinker 800ms steps(1, end) infinite;
-  color: #f3a847;
-  position: relative;
-}
-
-@keyframes blinker{
-  50%{
-    opacity: 0;
-  }
-} */
-
-/* Center About Me Div */
-
 /* Custom Media Queries */
 
 @media screen and (max-width: 576px) {
@@ -42,7 +27,8 @@ box-shadow: 3px 3px 8px -5px rgba(0,0,0,0.42);
     font-size: 1.8em;
   }
 
-  .about-title, .blinker-span {
+  .about-title,
+  .blinker-span {
     font-size: 1.1em;
   }
 }

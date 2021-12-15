@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Modal from '../Modal';
+// import Modal from '../Modal';
 import { Typewriter } from 'react-simple-typewriter';
 import "./style.css"
 
 const Projects = ({ category }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentPhoto, setCurrentPhoto] = useState();
+  // const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [currentPhoto, setCurrentPhoto] = useState();
 
   const [projects] = useState([
     {
@@ -122,20 +122,19 @@ const Projects = ({ category }) => {
     }
   ]);
 
-  const currentProjects = projects.filter((project) => project.category === category);
+  // const currentProjects = projects.filter((project) => project.category === category);
 
-  const toggleModal = (image, i) => {
-    setCurrentPhoto({ ...image, index: i });
-    setIsModalOpen(!isModalOpen);
-  };
+  // const toggleModal = (image, i) => {
+  //   setCurrentPhoto({ ...image, index: i });
+  //   setIsModalOpen(!isModalOpen);
+  // };
 
-  const handleDone = () => {
-    // console.log(`Done after 5 loops!`)
-  }
+  // const handleDone = () => {
+  //   console.log(`Done after 5 loops!`)
+  // }
 
   return (
     <div className="row justify-content-center">
-
       <div className="row col-lg-12 col-xxl-11 justify-content-center ">
 
         <div className="col-12 row justify-content-center">
@@ -149,50 +148,30 @@ const Projects = ({ category }) => {
                 typeSpeed={100}
                 deleteSpeed={90}
                 delaySpeed={1000}
-                onLoopDone={handleDone}
+                // onLoopDone={handleDone}
                 // onType={handleType}
               />
             </h1>
           </div>
         </div>
-      
-        
 
           {projects.map((project, i) => {
             return (
                 <>
-
                 <div className="col-12 row justify-content-center mb-xxl-5 ">
-                  {/* <div className="row col-lg-12 justify-content-center"> */}
-
-                    
-
                     <div id="projectPhotoCont" className="col-lg-5 col-md-8 col-sm-12 align-self-center ">
-                      {isModalOpen && <Modal onClose={toggleModal} currentPhoto={currentPhoto} />}
-                      {/* <div className="flex-row"> */}
+                      {/* {isModalOpen && <Modal onClose={toggleModal} currentPhoto={currentPhoto} />} */}
+
                       <div className="hovereffect">
-                        {/* {currentPhotos.map((image, i) => ( */}
                           <img
                             src={require(`../../assets/images/projects/${i}.png`)}
-                            // alt={image.name}
-                            // className="img-thumbnail mx-1"
                             className="img-responsive"
-                            // onClick={() => toggleModal(image, i)}
-                            // key={image.name}
                           />
                         {/* ))} */}
                             <div class="overlay row align-items-center justify-content-center border-0">
                               {/* <h2>Effect 13</h2> */}
-                                {/* <p> */}
-                                {/* <div className='row align-items-center justify-content-center'> */}
-                                  <div className='col-6'><a href={project.liveUrl} target="_blank" rel="noopener noreferrer"><i class="fas fa-link fs-1 main-color lighter-yellow"></i></a></div>
-                                  {/* <div className='col-6'><a href={project.github} target="_blank" rel="noopener noreferrer"><i class="fab fa-github fs-1 main-color"></i></a></div> */}
-                                  <div className='col-6'><a href={project.github} target="_blank" rel="noopener noreferrer"><i class="fas fa-code-branch fs-1 main-color lighter-yellow"></i></a></div>
-
-                                {/* </div> */}
-                                {/* </p> */}
-                              
-
+                                <div className='col-6'><a href={project.liveUrl} target="_blank" rel="noopener noreferrer"><i class="fas fa-link fs-1 main-color lighter-yellow"></i></a></div>
+                                <div className='col-6'><a href={project.github} target="_blank" rel="noopener noreferrer"><i class="fas fa-code-branch fs-1 main-color lighter-yellow"></i></a></div>
                             </div>
                       </div>
                     </div>
@@ -212,23 +191,18 @@ const Projects = ({ category }) => {
                           <div>
                             <a href={project.liveUrl} className="card-link btn btn-warning btn-sm btn-style col-md-2 col-3" target="_blank" rel="noopener noreferrer">Site</a>
                             <a href={project.github} className="card-link btn btn-warning btn-sm btn-style col-md-2 col-3" target="_blank" rel="noopener noreferrer">Repo</a>
-                            {/* <a href={project.liveUrl} target="_blank" rel="noopener noreferrer"><i class="fas fa-link fs-2 main-color col-md-2 col-3"></i></a>
-                            <a href={project.github} target="_blank" rel="noopener noreferrer"><i class="fab fa-github fs-2 main-color col-md-2 col-3"></i></a>
-                            <a href={project.github} target="_blank" rel="noopener noreferrer"><i class="fas fa-code-merge fs-2 main-color col-md-2 col-3"></i></a> */}
-
+                            {/* <a href={project.liveUrl} target="_blank" rel="noopener noreferrer"><i class="fas fa-link fs-2 main-color col-md-2 col-3"></i></a> */}
+                            {/* <a href={project.github} target="_blank" rel="noopener noreferrer"><i class="fab fa-github fs-2 main-color col-md-2 col-3"></i></a> */}
                           </div>
                         </div>
                       </div>
                     </div>
 
                 </div>
-                </>
+              </>
             )
           })}
-
-
       </div>
-
     </div>
     
   );

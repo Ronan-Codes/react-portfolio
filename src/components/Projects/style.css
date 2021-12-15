@@ -94,7 +94,6 @@
   color: rgb(48, 48, 48)
 }
 
-
 .project-description {
   /* font-family: 'Rubik', sans-serif; */
   /* font-family: 'Roboto Slab', serif; */
@@ -102,23 +101,17 @@
   font-weight: 400; 
 }
 
-
-
 .project-name {
   font-family: 'Source Code Pro', monospace;
   color: black;
 }
 
-
 .badge-color {
   background-color: rgb(48, 48, 48);
   /* background-color: rgb(78, 78, 78); */
-
   /* box-shadow: 3px 6px 10px -1px rgba(0,0,0,0.56); */
   -webkit-box-shadow: 2px 6px 10px -5px rgba(0,0,0,0.48); 
-box-shadow: 2px 6px 10px -5px rgba(0,0,0,0.48);
-
-  
+box-shadow: 2px 6px 10px -5px rgba(0,0,0,0.48);  
 }
 
 .btn-style {

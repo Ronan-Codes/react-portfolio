@@ -14,17 +14,6 @@
     color: inherit;
 }
 
-/* Changing Typewriter cursor to custom */
-/* .border-cursor:first-child {
-    animation: blinkTextCursor 500ms steps(44) infinite normal;
-    border-right: 2px solid 
-}
-
-@keyframes blinkTextCursor{
-    from{border-right-color: #ce8e3b;}
-    to{border-right-color: transparent;}
-} */
-
 .github-img {
     width: 90%;
 }
@@ -125,21 +114,6 @@
 	transition-property: transform;
 }
 
-/* upward hover effect */
-/* .jm-logo2:hover, 
-.jm-logo2:focus, 
-.jm-logo2:active {
-	-o-transform: translateY(-10px);
-	-ms-transform: translateY(-10px);
-	-webkit-transform: translateY(-10px);
-	transform: translateY(-10px);
-} */
-
-
-/* .img-container {
-    border: 5px solid rgb(228, 228, 228)
-} */
-
 /* rotate logo */
 .contact-logo {
 	position: relative;
@@ -158,16 +132,6 @@
 .email-cont:active img {
 	content: url('../../assets/logos/email-open-gray.png');
 }
-
-/* .link-class {
-    position: absolute; 
-	top: 0; 
-	right: 0; 
-	bottom: 0; 
-	left: 0; 
-	width: 100%; 
-	height: 100%;
-} */
 
 @media screen and (max-width: 576px) {
     .img-container {
