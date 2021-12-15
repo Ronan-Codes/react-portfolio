@@ -43,6 +43,11 @@ body {
   color: rgb(134, 134, 134);
 }
 
+/* .nav-color:active:hover {
+  text-decoration: none;
+     color: inherit;
+} */
+
 h1,
 h2,
 h3,
@@ -148,6 +153,7 @@ li {
 
 nav a:hover {
   text-decoration: none;
+  /* color: var(--secondary) */
 }
 
 nav li {
@@ -285,7 +291,7 @@ a {
   margin-right: -2px;
 }
 
-.main-color {
+.main-color, .main-color:hover {
   color: var(--secondary);
 }
 
@@ -324,6 +330,13 @@ html {
   scroll-padding-top: 90px;
   /* height of sticky header */
 }
+
+/* .hover, .hover:hover, .hover:focus, .hover:active {
+  text-decoration: none;
+  color: inherit;
+} */
+
+
 
 .footer-icons a {
   padding: 10px;
