@@ -43,16 +43,18 @@ function Nav(props) {
         <a id="name" className="navbar-brand fs-4 hover d-sm-none d-md-inline" href="#">
           {/* <span className="d-none d-md-inline">Ronan Galvez</span> */}
           <span>Ronan Galvez
+          {/* <p className='d-absolute'> */}
           <DarkModeToggle
             onChange={setIsDarkMode, darkMode.toggle}
             checked={isDarkMode, darkMode.value}
             size={40}
-            className='toggle'
+            className='position-absolute ms-2 mt-1'
             onClick={darkMode.disable}
 
             // checked={darkMode.value} onChange={darkMode.toggle}
           />
           </span>
+          {/* </p> */}
           {/* <span>
           <DarkModeToggle
             onChange={setIsDarkMode}

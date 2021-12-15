@@ -45,6 +45,7 @@ function ContactForm() {
     // console.log(`Done after 5 loops!`)
   }
 
+
   return (
     <div className="row justify-content-center">
       <div className="row col-lg-12 col-xxl-11 justify-content-center">
@@ -89,11 +90,15 @@ function ContactForm() {
           <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
             <div className="jm-logo2 col-12 rounded-circle row justify-content-center align-content-center">
               <div className="img-container  d-flex justify-content-center align-items-center rounded-circle contact-cont">
-              <span className='contact-logo'>
-                <img
-                  src={require(`../../assets/logos/linkedin.png`)} className="img-width" alt="=Linkedin link"
-                />
-              </span>
+                <a href="https://www.linkedin.com/in/ronan-galvez-08aaa81a8" target="_blank" rel="noopener noreferrer" className="contactLink contact-logo">
+                  <span>
+                  
+                    <img
+                      src={require(`../../assets/logos/linkedin.png`)} className="img-width" alt="=Linkedin link"
+                    />
+                  
+                  </span>
+                </a>
               </div>
                 <h6 className="body-text mt-3">
                   <a href="https://www.linkedin.com/in/ronan-galvez-08aaa81a8" target="_blank" rel="noopener noreferrer" className="contactLink">
@@ -107,12 +112,16 @@ function ContactForm() {
           <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
             <div className="jm-logo2 col-12 rounded-circle row justify-content-center align-content-center">
               <div className="img-container  d-flex justify-content-center align-items-center rounded-circle contact-cont">
-              <span className='contact-logo'>
-                <img
-                  src={require(`../../assets/logos/github2.svg`)} className=" github-img request-span" alt="Ghub link"
-                />
-                {/* <i class="fab fa-github logo1-size"></i> */}
-              </span>
+                <a href="https://github.com/Ronan-Codes" target="_blank" rel="noopener noreferrer" className="contactLink contact-logo">
+                  <span>
+                    
+                      <img
+                        src={require(`../../assets/logos/github2.svg`)} className=" github-img request-span" alt="Github link"
+                      />
+                    
+                    {/* <i class="fab fa-github logo1-size"></i> */}
+                  </span>
+                </a>
               </div>
                 <h6 className="body-text mt-3">
                   <a href="https://github.com/Ronan-Codes" target="_blank" rel="noopener noreferrer" className="contactLink">
@@ -140,11 +149,15 @@ function ContactForm() {
           <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
             <div className="jm-logo2 col-12 rounded-circle row justify-content-center align-content-center">
               <div className="img-container  d-flex justify-content-center align-items-center rounded-circle contact-cont email-cont">
-              <span className=''>
-                <img
-                  src={require(`../../assets/logos/email.png`)} className="img-width email-photo" alt="=Email link"
-                />
-              </span>
+                <a href="mailto:galv.ronan@gmail.com" target="_blank" rel="noopener noreferrer" className="contactLink">
+                  <span className=''>
+                  
+                    <img
+                      src={require(`../../assets/logos/email.png`)} className="img-width email-photo" alt="=Email link"
+                    />
+                  
+                  </span>
+                </a>
               </div>
                 <h6 className="body-text mt-3">
                   <a href="mailto:galv.ronan@gmail.com" target="_blank" rel="noopener noreferrer" className="contactLink">
@@ -158,9 +171,11 @@ function ContactForm() {
             <div className="jm-logo2 col-12 rounded-circle row justify-content-center align-content-center">
               <div className="img-container  d-flex justify-content-center align-items-center rounded-circle phone-cont">
               <span className='phone-logo'>
+                <a href="tel:+1-352-328-7698" rel="noopener noreferrer" className="contactLink">
                 <img
                   src={require(`../../assets/logos/phone.png`)} className="img-width" alt="Phone link"
                 />
+                </a>
               </span>
               </div>
                 <h6 className="body-text mt-3">
