@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eb731a2ac84d993546e7f97a33873fd5",
+    "revision": "f988deb01cfa147910bed03696bcd990",
     "url": "/react-portfolio/index.html"
   },
   {
-    "revision": "d346a671ad3e71de6904",
+    "revision": "10d196906957264b91d1",
     "url": "/react-portfolio/static/css/main.5066dd77.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-portfolio/static/js/2.97a671da.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d346a671ad3e71de6904",
-    "url": "/react-portfolio/static/js/main.56e58dd6.chunk.js"
+    "revision": "10d196906957264b91d1",
+    "url": "/react-portfolio/static/js/main.42ec6711.chunk.js"
   },
   {
     "revision": "aff33cef9dbb8787d6b3",
@@ -80,8 +80,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-portfolio/static/media/9.69a72dc9.png"
   },
   {
-    "revision": "1ae6857b00cdeb7e385919022090e747",
-    "url": "/react-portfolio/static/media/codingResume.1ae6857b.pdf"
+    "revision": "7cc7e59613542eaf1f38555d3fbd664b",
+    "url": "/react-portfolio/static/media/codingResume.7cc7e596.pdf"
   },
   {
     "revision": "71dda98f160f101149852b7480e8ca34",
