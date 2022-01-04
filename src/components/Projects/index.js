@@ -44,7 +44,7 @@ const Projects = ({ category }) => {
       name: 'Self-Care',
       technology: ['Zebra Datepicker', 'MySQL 2', 'bcrypt', 'dotenv', 'Express', 'Sequelize', 'JS', 'Bootstrap CSS'],
       category: 'portfolio',
-      description: 'Self-Care is a simple and convenient journaling app. It utilizes a third-party datepicker app (Zebra Datepicker) to seemlessly keep record of daily journal entries.',
+      description: 'Self-Care is a simple and convenient journaling app. It utilizes a third-party datepicker app (Zebra Datepicker) to seamlessly keep record of daily journal entries.',
       liveUrl: 'https://ronan-codes-self-care.herokuapp.com/',
       github: 'https://github.com/Ronan-Codes/self-care.git'
     },
