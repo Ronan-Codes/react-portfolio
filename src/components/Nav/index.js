@@ -65,7 +65,7 @@ function Nav(props) {
               ))}
             
                 <li
-                  className="mx-1 hover nav-color"
+                  className="mx-1 hover nav-color resumeLink"
                   key="resume"
                 >
                   <a

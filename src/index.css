@@ -386,3 +386,7 @@ html {
     font-size: 1rem;
   }
 }
+
+.resumeLink a {
+  color: inherit;
+}
