@@ -29,7 +29,13 @@ function Nav(props) {
     
       <nav className="navbar navbar-expand-lg navbar-light bg-light py-0">
         <div className="container-fluid navBgColor">
-          <a id="name" className="navbar-brand fs-4 hover d-sm-none d-md-inline" href="/">
+          <a onClick={() => {
+                      setCurrentCategory(categories[0]);
+                      ;
+                    }} 
+              id="name" 
+              className="navbar-brand fs-4 hover d-sm-none d-md-inline" 
+              >
             <span>Ronan Galvez
               <DarkModeToggle
                 onChange={setIsDarkMode, darkMode.toggle}
