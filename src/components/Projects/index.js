@@ -13,7 +13,7 @@ const Projects = ({ category }) => {
       technology: ['React.js', 'MongoDB', 'Express', 'Node.js', 'GraphQL', 'JWT'],
       category: 'portfolio',
       description: "Pic'd Up is a portfolio hosting site specifically made for photographers. The simple and clean design makes it easy for photographers to showcase their work and even easier for clients to search for a photographer they need.",
-      liveUrl: 'https://picd-up-project.herokuapp.com/profile',
+      liveUrl: 'https://picd-up-project.herokuapp.com/',
       github: 'https://github.com/Ronan-Codes/Project-3.git'
     },
     {
