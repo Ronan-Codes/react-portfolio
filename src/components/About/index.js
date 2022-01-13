@@ -5,7 +5,7 @@ import './style.css';
 import { Typewriter } from 'react-simple-typewriter'
 
 function About(props) {  
-  var { currentCategory } = props;
+  // var { currentCategory } = props;
 
   // const handleDone = () => {
   //   console.log(`Done after 5 loops!`)

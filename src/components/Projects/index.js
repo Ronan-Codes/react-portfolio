@@ -166,6 +166,7 @@ const Projects = ({ category }) => {
                           <img
                             src={require(`../../assets/images/projects/${i}.png`)}
                             className="img-responsive"
+                            alt='Project images'
                           />
                         {/* ))} */}
                             <div class="overlay row align-items-center justify-content-center border-0">
