@@ -59,7 +59,7 @@ function ContactForm() {
                 <a href="https://github.com/Ronan-Codes" target="_blank" rel="noopener noreferrer" className="contactLink contact-logo">
                   <span>
                       <img
-                        src={require(`../../assets/logos/github2.svg`)} className=" github-img request-span" alt="Github link"
+                        src={require(`../../assets/logos/github.png`)} className="github-img" alt="Github link"
                       />
                   </span>
                 </a>
