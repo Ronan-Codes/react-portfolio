@@ -17,6 +17,22 @@ const Projects = ({ category }) => {
       github: 'https://github.com/Ronan-Codes/Project-3.git'
     },
     {
+      name: 'Self-Care',
+      technology: ['Zebra Datepicker', 'MySQL 2', 'bcrypt', 'dotenv', 'Express', 'Sequelize', 'JS', 'Bootstrap CSS'],
+      category: 'portfolio',
+      description: 'Self-Care is a simple and convenient journaling app. It utilizes a third-party datepicker app (Zebra Datepicker) to seamlessly keep record of daily journal entries.',
+      liveUrl: 'https://ronan-codes-self-care.herokuapp.com/',
+      github: 'https://github.com/Ronan-Codes/self-care.git'
+    },
+    {
+      name: 'DateNite',
+      technology: ['Meal API','Cocktail API', 'JS','Bulma CSS','HTML'],
+      category: 'portfolio',
+      description: 'DateNite simplifies the process of deciding what to do for date night. Simply provide a primary ingredient, and DateNite provides easy-to-make recipes for your ideal date night, dine-in meal and cocktail.',
+      liveUrl: 'https://justpuzey.github.io/DateNite/',
+      github: 'https://github.com/Ronan-Codes/DateNite.git'
+    },
+    {
       name: "Shop-Shop",
       technology: ['React.js', 'Redux', 'Stripe', 'MongoDB', 'Apollo', 'Express', 'IndexedDB', 'GraphQL', 'JWT'],
       category: 'portfolio',
@@ -25,28 +41,20 @@ const Projects = ({ category }) => {
       github: 'https://github.com/Ronan-Codes/shop-shop.git'
     },
     {
+      name: 'Weather Dashboard',
+      technology: ['Open Weather API','JS','jQuery','CSS','HTML','Moment.js'],
+      category: 'portfolio',
+      description: "Weather Dashboard is an interactive weather application that allows a user to search for a specific city's weather information. Weather Dashboard utilizes OpenWeatherMap API for acquiring weather data. Local Storage is utilized to save past searched cities.",
+      liveUrl: 'https://ronan-codes.github.io/weather-dashboard/',
+      github: 'https://github.com/Ronan-Codes/weather-dashboard.git'
+    },
+    {
       name: "Book for You",
       technology: ['React.js', 'MongoDB', 'Apollo', 'Express', 'GraphQL', 'Heroku', 'Bootstrap CSS', 'jwt-decode', 'JWT', 'bcrypt'],
       category: 'portfolio',
       description: "A book search engine that allows users to login and catalog their book searches. This app utilizes Apollo Server to use GraphQl, replacing an existing RESTful API.",
       liveUrl: 'https://book-for-you-ronancodes.herokuapp.com/',
       github: 'https://github.com/Ronan-Codes/book-for-you.git'
-    },
-    {
-      name: 'Budget Tracker',
-      technology: ['MongoDB', 'Express', 'Service Workers', 'IndexedDB', 'Manifest', 'Heroku', 'JS'],
-      category: 'portfolio',
-      description: 'Utilizing IndexedDB and service-workers, this budget tracker app was refactored to provide offline access & functionality to users.',
-      liveUrl: 'https://ronan-budget-tracker.herokuapp.com/',
-      github: 'https://github.com/Ronan-Codes/budget-tracker.git'
-    },
-    {
-      name: 'Self-Care',
-      technology: ['Zebra Datepicker', 'MySQL 2', 'bcrypt', 'dotenv', 'Express', 'Sequelize', 'JS', 'Bootstrap CSS'],
-      category: 'portfolio',
-      description: 'Self-Care is a simple and convenient journaling app. It utilizes a third-party datepicker app (Zebra Datepicker) to seamlessly keep record of daily journal entries.',
-      liveUrl: 'https://ronan-codes-self-care.herokuapp.com/',
-      github: 'https://github.com/Ronan-Codes/self-care.git'
     },
     {
       name: 'Tech Blog',
@@ -65,14 +73,6 @@ const Projects = ({ category }) => {
       github: 'https://github.com/Ronan-Codes/note-taker.git'
     },
     {
-      name: 'DateNite',
-      technology: ['Meal API','Cocktail API', 'JS','Bulma CSS','HTML'],
-      category: 'portfolio',
-      description: 'DateNite simplifies the process of deciding what to do for date night. Simply provide a primary ingredient, and DateNite provides easy-to-make recipes for your ideal date night, dine-in meal and cocktail.',
-      liveUrl: 'https://justpuzey.github.io/DateNite/',
-      github: 'https://github.com/Ronan-Codes/DateNite.git'
-    },
-    {
       name: 'Run Buddy',
       technology: ['CSS', 'HTML'],
       category: 'portfolio',
@@ -81,12 +81,12 @@ const Projects = ({ category }) => {
       github: 'https://github.com/Ronan-Codes/run-buddy.git'
     },
     {
-      name: 'Weather Dashboard',
-      technology: ['Open Weather API','JS','jQuery','CSS','HTML','Moment.js'],
+      name: 'Budget Tracker',
+      technology: ['MongoDB', 'Express', 'Service Workers', 'IndexedDB', 'Manifest', 'Heroku', 'JS'],
       category: 'portfolio',
-      description: "Weather Dashboard is an interactive weather application that allows a user to search for a specific city's weather information. Weather Dashboard utilizes OpenWeatherMap API for acquiring weather data. Local Storage is utilized to save past searched cities.",
-      liveUrl: 'https://ronan-codes.github.io/weather-dashboard/',
-      github: 'https://github.com/Ronan-Codes/weather-dashboard.git'
+      description: 'Utilizing IndexedDB and service-workers, this budget tracker app was refactored to provide offline access & functionality to users.',
+      liveUrl: 'https://ronan-budget-tracker.herokuapp.com/',
+      github: 'https://github.com/Ronan-Codes/budget-tracker.git'
     },
     {
       name: 'Work Day Planner',
