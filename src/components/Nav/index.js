@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
-import resumePdf from '../../assets/resume/codingResume.pdf';
+import resumePdf from '../../assets/resume/Antra-Resume-Mock-Interview.pdf';
 
 import DarkModeToggle from "react-dark-mode-toggle";
 import useDarkMode from 'use-dark-mode';

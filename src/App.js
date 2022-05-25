@@ -6,7 +6,7 @@ import ContactForm from './components/Contact';
 // import Resume from './components/Resume';
 
 import './darkMode.scss'
-import resumePdf from './assets/resume/codingResume.pdf';
+import resumePdf from './assets/resume/Antra-Resume-Mock-Interview.pdf';
 
 function App() {
   const [categories] = useState([
@@ -50,13 +50,10 @@ function App() {
 
       <footer className='bg-light'>
         <div className="footer-icons navBgColor py-1">
-          <a className='footer-links' href="https://www.linkedin.com/in/ronan-galvez-08aaa81a8" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-            <i class="fab fa-linkedin fs-3"></i>
-          </a>
           <a className='footer-links' href="https://github.com/Ronan-Codes" target="_blank" rel="noopener noreferrer" title="GitHub">
             <i class="fab fa-github fs-3"></i>
           </a>
-          <a className='footer-links' href="mailto:galv.ronan@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
+          <a className='footer-links' href="mailto:rgalvez.antra@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
             <i class="fas fa-envelope-square fs-3"></i>
           </a>
           <a className='footer-links' href={resumePdf} target="_blank" rel="noopener noreferrer" title="Resume">

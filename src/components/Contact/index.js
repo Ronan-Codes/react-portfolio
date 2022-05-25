@@ -31,10 +31,10 @@ function ContactForm() {
 
         <div className="col-12 row justify-content-center mt-lg-5">
 
-          <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
+          {/* <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
             <div className="jm-logo2 col-12 rounded-circle row justify-content-center align-content-center">
               <div className="img-container  d-flex justify-content-center align-items-center rounded-circle contact-cont">
-                <a href="https://www.linkedin.com/in/ronan-galvez-08aaa81a8" target="_blank" rel="noopener noreferrer" className="contactLink contact-logo">
+                <a href="" target="_blank" rel="noopener noreferrer" className="contactLink contact-logo">
                   <span>
                   
                     <img
@@ -45,12 +45,12 @@ function ContactForm() {
                 </a>
               </div>
                 <h6 className="body-text mt-3">
-                  <a href="https://www.linkedin.com/in/ronan-galvez-08aaa81a8" target="_blank" rel="noopener noreferrer" className="contactLink">
+                  <a href="" target="_blank" rel="noopener noreferrer" className="contactLink">
                     LinkedIn
                   </a>
                 </h6>
             </div>
-          </div>
+          </div> */}
 
           {/* original */}
           <div className="col-lg-3 col-md-6 col-12 align-self-center text-center justify-content-center row mb-4">
@@ -84,8 +84,8 @@ function ContactForm() {
                 </a>
               </div>
                 <h6 className="body-text mt-3">
-                  <a href="mailto:galv.ronan@gmail.com" target="_blank" rel="noopener noreferrer" className="contactLink">
-                    ronancodes.gmail.com
+                  <a href="mailto:rgalvez.antra@gmail.com" target="_blank" rel="noopener noreferrer" className="contactLink">
+                    rgalvez.antra@gmail.com
                   </a>
                 </h6>
             </div>
@@ -103,8 +103,8 @@ function ContactForm() {
               </span>
               </div>
                 <h6 className="body-text mt-3">
-                  <a href="tel:+1-352-328-7698" rel="noopener noreferrer" className="contactLink">
-                    +1-352-328-7698 
+                  <a href="tel:+1-352-558-8653" rel="noopener noreferrer" className="contactLink">
+                    +1-352-558-8653
                   </a>
                 </h6>
             </div>
