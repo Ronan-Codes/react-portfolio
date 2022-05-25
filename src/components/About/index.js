@@ -43,11 +43,11 @@ function About(props) {
         </div>
         <div className="my-3">
           <p className="about-text body-text">
-          An analytical and detail-oriented graduate of UCF Coding Boot camp and UF Psychology. I am aspiring for an entry-level Full-Stack or Front-End Developer position, in an environment where I can grow and collaborate alongside other developers. The coding bootcamp allowed me to immerse myself in coding challenges and projects to develop quality Full-Stack Web Developer Skills (HTML, CSS, JS, React, Node ,Express, Databases, and more), as well as further my collaborative and problem-solving skills.
+          Software Developer with 4-5 years of experience, focusing on front-end development using React, HTML5, CSS3, JavaScript, TypeScript, jQuery, Node, Express, MongoDB, GraphQL, MySQL. An analytical and detail-oriented graduate of UCF Coding Boot camp and UF Psychology. I am currently looking for my next contract focusing on ReactJS! I am an eager learner and I thrive in environments where I can grow and collaborate alongside other developers. 
           <br></br>
-          {/* Prior to finding my passion for coding, many of my experiences eventually led to my acceptance into UF’s Grad School Occupational Therapy Program. Although my gut told me the medical field was no longer for me, the journey taught me the valuable lessons of how to learn, to persevere, and to think critically. Among these experiences include being a Certified Personal Trainer at Youfit Health Clubs working with several clients to reach their fitness goal and crafting their personalized workouts. Additionally, I have also worked in several volunteer opportunities: lab research analyzing behaviors, Therapy Center assisting and observing occupational therapists, and UF Sports Medical Institution and Rehab Services. */}
-          <br></br>
-          Committed to continuing my growth, I’m willing to learn new or legacy technologies/tools. I’m eager to take my passion for learning into the programming workforce!
+
+          {/* <br></br> */}
+          {/* Committed to continuing my growth, I’m willing to learn new or legacy technologies/tools. I’m eager to take my passion for learning into the programming workforce! */}
           </p>
         </div>
 
