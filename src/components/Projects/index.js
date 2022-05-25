@@ -8,21 +8,23 @@ const Projects = ({ category }) => {
   // const [currentPhoto, setCurrentPhoto] = useState();
 
   const [projects] = useState([
-    {
-      name: "Pic'd Up (In Progress)",
-      technology: ['React.js', 'MongoDB', 'Express', 'Node.js', 'GraphQL', 'JWT'],
-      category: 'portfolio',
-      description: "Pic'd Up is a portfolio hosting site specifically made for photographers. The simple and clean design makes it easy for photographers to showcase their work and even easier for clients to search for a photographer they need.",
-      liveUrl: 'https://evening-refuge-82542.herokuapp.com/',
-      github: 'https://github.com/Ronan-Codes/Project-3.git'
-    },
+    // {
+    //   name: "Pic'd Up (In Progress)",
+    //   technology: ['React.js', 'MongoDB', 'Express', 'Node.js', 'GraphQL', 'JWT'],
+    //   category: 'portfolio',
+    //   description: "Pic'd Up is a portfolio hosting site specifically made for photographers. The simple and clean design makes it easy for photographers to showcase their work and even easier for clients to search for a photographer they need.",
+    //   liveUrl: 'https://evening-refuge-82542.herokuapp.com/',
+    //   github: 'https://github.com/Ronan-Codes/Project-3.git',
+    //   image: 0
+    // },
     {
       name: "Shop-Shop",
       technology: ['React.js', 'Redux', 'Stripe', 'MongoDB', 'Apollo', 'Express', 'IndexedDB', 'GraphQL', 'JWT'],
       category: 'portfolio',
       description: "An E-commerce platform where users can create an account, login, add/remove items from cart, checkout orders via stripe, as well as view order history. Context API was initially used for the application's state management with React, which is then refactored to utilize Redux.",
       liveUrl: 'https://shop-shop-ronancodes.herokuapp.com/',
-      github: 'https://github.com/Ronan-Codes/shop-shop.git'
+      github: 'https://github.com/Ronan-Codes/shop-shop.git',
+      image: 1
     },
     {
       name: "Book for You",
@@ -30,7 +32,8 @@ const Projects = ({ category }) => {
       category: 'portfolio',
       description: "A book search engine that allows users to login and catalog their book searches. This app utilizes Apollo Server to use GraphQl, replacing an existing RESTful API.",
       liveUrl: 'https://book-for-you-ronancodes.herokuapp.com/',
-      github: 'https://github.com/Ronan-Codes/book-for-you.git'
+      github: 'https://github.com/Ronan-Codes/book-for-you.git',
+      image: 2
     },
     {
       name: 'Budget Tracker',
@@ -38,7 +41,8 @@ const Projects = ({ category }) => {
       category: 'portfolio',
       description: 'Utilizing IndexedDB and service-workers, this budget tracker app was refactored to provide offline access & functionality to users.',
       liveUrl: 'https://ronan-budget-tracker.herokuapp.com/',
-      github: 'https://github.com/Ronan-Codes/budget-tracker.git'
+      github: 'https://github.com/Ronan-Codes/budget-tracker.git',
+      image: 3
     },
     {
       name: 'Self-Care',
@@ -46,23 +50,26 @@ const Projects = ({ category }) => {
       category: 'portfolio',
       description: 'Self-Care is a simple and convenient journaling app. It utilizes a third-party datepicker app (Zebra Datepicker) to seamlessly keep record of daily journal entries.',
       liveUrl: 'https://ronan-codes-self-care.herokuapp.com/',
-      github: 'https://github.com/Ronan-Codes/self-care.git'
+      github: 'https://github.com/Ronan-Codes/self-care.git',
+      image: 4
     },
-    {
-      name: 'Tech Blog',
-      technology: ['MySQL 2', 'Express', 'Sequelize', 'bcrypt', 'dotenv', 'JS', 'Bootstrap CSS'],
-      category: 'portfolio',
-      description: 'The Tech Blog allows developers to publish blog posts that other users can comment on. When logged in, users can update or delete their own posts. This is a CMS-style blog, much like a Wordpress site.',
-      liveUrl: 'https://ronan-codes-cms-tech-blog.herokuapp.com/',
-      github: 'https://github.com/Ronan-Codes/cms-tech-blog.git'
-    },
+    // {
+    //   name: 'Tech Blog',
+    //   technology: ['MySQL 2', 'Express', 'Sequelize', 'bcrypt', 'dotenv', 'JS', 'Bootstrap CSS'],
+    //   category: 'portfolio',
+    //   description: 'The Tech Blog allows developers to publish blog posts that other users can comment on. When logged in, users can update or delete their own posts. This is a CMS-style blog, much like a Wordpress site.',
+    //   liveUrl: 'https://ronan-codes-cms-tech-blog.herokuapp.com/',
+    //   github: 'https://github.com/Ronan-Codes/cms-tech-blog.git',
+    //   image: 5
+    // },
     {
       name: 'Note Taker',
       technology: ['Express', 'UUID', 'Bootstrap CSS', 'HTML'],
       category: 'portfolio',
       description: 'Note Taker is your standard note-taking application that allows to you create, save, and delete notes. This application utilizes Express.js to retrieve, create, and delete data from a JSON.file.',
       liveUrl: 'https://ronan-note-taker.herokuapp.com/',
-      github: 'https://github.com/Ronan-Codes/note-taker.git'
+      github: 'https://github.com/Ronan-Codes/note-taker.git',
+      image: 6
     },
     {
       name: 'DateNite',
@@ -70,7 +77,8 @@ const Projects = ({ category }) => {
       category: 'portfolio',
       description: 'DateNite simplifies the process of deciding what to do for date night. Simply provide a primary ingredient, and DateNite provides easy-to-make recipes for your ideal date night, dine-in meal and cocktail.',
       liveUrl: 'https://justpuzey.github.io/DateNite/',
-      github: 'https://github.com/Ronan-Codes/DateNite.git'
+      github: 'https://github.com/Ronan-Codes/DateNite.git',
+      image: 7
     },
     {
       name: 'Run Buddy',
@@ -78,7 +86,8 @@ const Projects = ({ category }) => {
       category: 'portfolio',
       description: 'Run Buddy is a mock website for a fitness service company. Plain HTML and CSS is utilized to create the layout and various form elements.',
       liveUrl: 'https://ronan-codes.github.io/run-buddy/',
-      github: 'https://github.com/Ronan-Codes/run-buddy.git'
+      github: 'https://github.com/Ronan-Codes/run-buddy.git',
+      image: 8
     },
     {
       name: 'Weather Dashboard',
@@ -86,7 +95,8 @@ const Projects = ({ category }) => {
       category: 'portfolio',
       description: "Weather Dashboard is an interactive weather application that allows a user to search for a specific city's weather information. Weather Dashboard utilizes OpenWeatherMap API for acquiring weather data. Local Storage is utilized to save past searched cities.",
       liveUrl: 'https://ronan-codes.github.io/weather-dashboard/',
-      github: 'https://github.com/Ronan-Codes/weather-dashboard.git'
+      github: 'https://github.com/Ronan-Codes/weather-dashboard.git',
+      image: 9
     },
     {
       name: 'Work Day Planner',
@@ -94,23 +104,26 @@ const Projects = ({ category }) => {
       category: 'portfolio',
       description: "Work Day Scheduler is a daily planner that saves `To-Do Lists` into a local storage. The program utilizes HTML, CSS & Bootstrap, JavaScript & jQuery, and Moment.js for time related features.",
       liveUrl: 'https://ronan-codes.github.io/work-day-planner',
-      github: 'https://github.com/Ronan-Codes/work-day-planner.git'
+      github: 'https://github.com/Ronan-Codes/work-day-planner.git',
+      image: 10
     },
-    {
-      name: 'Timed Code Quiz',
-      technology: ['JS','CSS','HTML'],
-      category: 'portfolio',
-      description: "A timed quiz for aspiring web developers built using HTML, CSS, Javascript. DOM manipulation was utilized to provide functionalites such as countdown timer, high score list, and questions appearing consequtively (which can affect the timer).",
-      liveUrl: 'https://ronan-codes.github.io/timed-code-quiz',
-      github: 'https://github.com/Ronan-Codes/timed-code-quiz.git'
-    },
+    // {
+    //   name: 'Timed Code Quiz',
+    //   technology: ['JS','CSS','HTML'],
+    //   category: 'portfolio',
+    //   description: "A timed quiz for aspiring web developers built using HTML, CSS, Javascript. DOM manipulation was utilized to provide functionalites such as countdown timer, high score list, and questions appearing consequtively (which can affect the timer).",
+    //   liveUrl: 'https://ronan-codes.github.io/timed-code-quiz',
+    //   github: 'https://github.com/Ronan-Codes/timed-code-quiz.git',
+    //   image: 11
+    // },
     {
       name: 'Password Generator',
       technology: ['JS','CSS','HTML'],
       category: 'portfolio',
       description: "A random password generator based on criteria provided by the user. The criteria is provided through prompts.",
       liveUrl: 'https://ronan-codes.github.io/pasword-generator-ronan',
-      github: 'https://github.com/Ronan-Codes/pasword-generator-ronan.git'
+      github: 'https://github.com/Ronan-Codes/pasword-generator-ronan.git',
+      image: 12
     },
     {
       name: 'Refactor-Horiseon',
@@ -118,7 +131,8 @@ const Projects = ({ category }) => {
       category: 'portfolio',
       description: "This project is a front-end refactoring of a mock marketing agency site. The goal was to improve accessibility, as well as optimize it for search engines by implementing logical structure, semantic HTML elements, alt attributes, and a succinct title.",
       liveUrl: 'https://ronan-codes.github.io/refactor-horiseon',
-      github: 'https://github.com/Ronan-Codes/refactor-horiseon.git'
+      github: 'https://github.com/Ronan-Codes/refactor-horiseon.git',
+      image: 13
     }
   ]);
 
@@ -164,7 +178,7 @@ const Projects = ({ category }) => {
 
                       <div className="hovereffect">
                           <img
-                            src={require(`../../assets/images/projects/${i}.png`)}
+                            src={require(`../../assets/images/projects/${project.image}.png`)}
                             className="img-responsive"
                           />
                         {/* ))} */}
