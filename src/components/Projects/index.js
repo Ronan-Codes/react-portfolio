@@ -17,14 +17,23 @@ const Projects = ({ category }) => {
     //   github: 'https://github.com/Ronan-Codes/Project-3.git',
     //   image: 0
     // },
+    // {
+    //   name: "Shop-Shop",
+    //   technology: ['React.js', 'Redux', 'Stripe', 'MongoDB', 'Apollo', 'Express', 'IndexedDB', 'GraphQL', 'JWT'],
+    //   category: 'portfolio',
+    //   description: "An E-commerce platform where users can create an account, login, add/remove items from cart, checkout orders via stripe, as well as view order history. Context API was initially used for the application's state management with React, which is then refactored to utilize Redux.",
+    //   liveUrl: 'https://shop-shop-ronancodes.herokuapp.com/',
+    //   github: 'https://github.com/Ronan-Codes/shop-shop.git',
+    //   image: 1
+    // },
     {
-      name: "Shop-Shop",
-      technology: ['React.js', 'Redux', 'Stripe', 'MongoDB', 'Apollo', 'Express', 'IndexedDB', 'GraphQL', 'JWT'],
+      name: 'DateNite',
+      technology: ['Meal API','Cocktail API', 'JS','Bulma CSS','HTML'],
       category: 'portfolio',
-      description: "An E-commerce platform where users can create an account, login, add/remove items from cart, checkout orders via stripe, as well as view order history. Context API was initially used for the application's state management with React, which is then refactored to utilize Redux.",
-      liveUrl: 'https://shop-shop-ronancodes.herokuapp.com/',
-      github: 'https://github.com/Ronan-Codes/shop-shop.git',
-      image: 1
+      description: 'DateNite simplifies the process of deciding what to do for date night. Simply provide a primary ingredient, and DateNite provides easy-to-make recipes for your ideal date night, dine-in meal and cocktail.',
+      liveUrl: 'https://justpuzey.github.io/DateNite/',
+      github: 'https://github.com/Ronan-Codes/DateNite.git',
+      image: 7
     },
     {
       name: "Book for You",
@@ -36,23 +45,32 @@ const Projects = ({ category }) => {
       image: 2
     },
     {
-      name: 'Budget Tracker',
-      technology: ['MongoDB', 'Express', 'Service Workers', 'IndexedDB', 'Manifest', 'Heroku', 'JS'],
+      name: 'Weather Dashboard',
+      technology: ['Open Weather API','JS','jQuery','CSS','HTML','Moment.js'],
       category: 'portfolio',
-      description: 'Utilizing IndexedDB and service-workers, this budget tracker app was refactored to provide offline access & functionality to users.',
-      liveUrl: 'https://ronan-budget-tracker.herokuapp.com/',
-      github: 'https://github.com/Ronan-Codes/budget-tracker.git',
-      image: 3
+      description: "Weather Dashboard is an interactive weather application that allows a user to search for a specific city's weather information. Weather Dashboard utilizes OpenWeatherMap API for acquiring weather data. Local Storage is utilized to save past searched cities.",
+      liveUrl: 'https://ronan-codes.github.io/weather-dashboard/',
+      github: 'https://github.com/Ronan-Codes/weather-dashboard.git',
+      image: 9
     },
     {
-      name: 'Self-Care',
-      technology: ['Zebra Datepicker', 'MySQL 2', 'bcrypt', 'dotenv', 'Express', 'Sequelize', 'JS', 'Bootstrap CSS'],
+      name: 'Run Buddy',
+      technology: ['CSS', 'HTML'],
       category: 'portfolio',
-      description: 'Self-Care is a simple and convenient journaling app. It utilizes a third-party datepicker app (Zebra Datepicker) to seamlessly keep record of daily journal entries.',
-      liveUrl: 'https://ronan-codes-self-care.herokuapp.com/',
-      github: 'https://github.com/Ronan-Codes/self-care.git',
-      image: 4
+      description: 'Run Buddy is a mock website for a fitness service company. Plain HTML and CSS is utilized to create the layout and various form elements.',
+      liveUrl: 'https://ronan-codes.github.io/run-buddy/',
+      github: 'https://github.com/Ronan-Codes/run-buddy.git',
+      image: 8
     },
+    // {
+    //   name: 'Self-Care',
+    //   technology: ['Zebra Datepicker', 'MySQL 2', 'bcrypt', 'dotenv', 'Express', 'Sequelize', 'JS', 'Bootstrap CSS'],
+    //   category: 'portfolio',
+    //   description: 'Self-Care is a simple and convenient journaling app. It utilizes a third-party datepicker app (Zebra Datepicker) to seamlessly keep record of daily journal entries.',
+    //   liveUrl: 'https://ronan-codes-self-care.herokuapp.com/',
+    //   github: 'https://github.com/Ronan-Codes/self-care.git',
+    //   image: 4
+    // },
     // {
     //   name: 'Tech Blog',
     //   technology: ['MySQL 2', 'Express', 'Sequelize', 'bcrypt', 'dotenv', 'JS', 'Bootstrap CSS'],
@@ -72,33 +90,6 @@ const Projects = ({ category }) => {
       image: 6
     },
     {
-      name: 'DateNite',
-      technology: ['Meal API','Cocktail API', 'JS','Bulma CSS','HTML'],
-      category: 'portfolio',
-      description: 'DateNite simplifies the process of deciding what to do for date night. Simply provide a primary ingredient, and DateNite provides easy-to-make recipes for your ideal date night, dine-in meal and cocktail.',
-      liveUrl: 'https://justpuzey.github.io/DateNite/',
-      github: 'https://github.com/Ronan-Codes/DateNite.git',
-      image: 7
-    },
-    {
-      name: 'Run Buddy',
-      technology: ['CSS', 'HTML'],
-      category: 'portfolio',
-      description: 'Run Buddy is a mock website for a fitness service company. Plain HTML and CSS is utilized to create the layout and various form elements.',
-      liveUrl: 'https://ronan-codes.github.io/run-buddy/',
-      github: 'https://github.com/Ronan-Codes/run-buddy.git',
-      image: 8
-    },
-    {
-      name: 'Weather Dashboard',
-      technology: ['Open Weather API','JS','jQuery','CSS','HTML','Moment.js'],
-      category: 'portfolio',
-      description: "Weather Dashboard is an interactive weather application that allows a user to search for a specific city's weather information. Weather Dashboard utilizes OpenWeatherMap API for acquiring weather data. Local Storage is utilized to save past searched cities.",
-      liveUrl: 'https://ronan-codes.github.io/weather-dashboard/',
-      github: 'https://github.com/Ronan-Codes/weather-dashboard.git',
-      image: 9
-    },
-    {
       name: 'Work Day Planner',
       technology: ['JS','jQuery','CSS','HTML','Moment.js'],
       category: 'portfolio',
@@ -116,15 +107,15 @@ const Projects = ({ category }) => {
     //   github: 'https://github.com/Ronan-Codes/timed-code-quiz.git',
     //   image: 11
     // },
-    {
-      name: 'Password Generator',
-      technology: ['JS','CSS','HTML'],
-      category: 'portfolio',
-      description: "A random password generator based on criteria provided by the user. The criteria is provided through prompts.",
-      liveUrl: 'https://ronan-codes.github.io/pasword-generator-ronan',
-      github: 'https://github.com/Ronan-Codes/pasword-generator-ronan.git',
-      image: 12
-    },
+    // {
+    //   name: 'Password Generator',
+    //   technology: ['JS','CSS','HTML'],
+    //   category: 'portfolio',
+    //   description: "A random password generator based on criteria provided by the user. The criteria is provided through prompts.",
+    //   liveUrl: 'https://ronan-codes.github.io/pasword-generator-ronan',
+    //   github: 'https://github.com/Ronan-Codes/pasword-generator-ronan.git',
+    //   image: 12
+    // },
     {
       name: 'Refactor-Horiseon',
       technology: ['CSS', 'HTML'],
@@ -133,6 +124,15 @@ const Projects = ({ category }) => {
       liveUrl: 'https://ronan-codes.github.io/refactor-horiseon',
       github: 'https://github.com/Ronan-Codes/refactor-horiseon.git',
       image: 13
+    },
+    {
+      name: 'Budget Tracker',
+      technology: ['MongoDB', 'Express', 'Service Workers', 'IndexedDB', 'Manifest', 'Heroku', 'JS'],
+      category: 'portfolio',
+      description: 'Utilizing IndexedDB and service-workers, this budget tracker app was refactored to provide offline access & functionality to users.',
+      liveUrl: 'https://ronan-budget-tracker.herokuapp.com/',
+      github: 'https://github.com/Ronan-Codes/budget-tracker.git',
+      image: 3
     }
   ]);
 
@@ -179,7 +179,7 @@ const Projects = ({ category }) => {
                       <div className="hovereffect">
                           <img
                             src={require(`../../assets/images/projects/${project.image}.png`)}
-                            className="img-responsive"
+                            className="img-responsive" alt={project.name}
                           />
                         {/* ))} */}
                             <div class="overlay row align-items-center justify-content-center border-0">

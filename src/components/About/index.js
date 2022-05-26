@@ -5,7 +5,6 @@ import './style.css';
 import { Typewriter } from 'react-simple-typewriter'
 
 function About(props) {  
-  var { currentCategory } = props;
 
   // const handleDone = () => {
   //   console.log(`Done after 5 loops!`)
@@ -43,7 +42,7 @@ function About(props) {
         </div>
         <div className="my-3">
           <p className="about-text body-text">
-          Software Developer with 4-5 years of experience, focusing on front-end development using React, HTML5, CSS3, JavaScript, TypeScript, jQuery, Node, Express, MongoDB, GraphQL, MySQL. An analytical and detail-oriented graduate of UCF Coding Boot camp and UF Psychology. I am currently looking for my next contract focusing on ReactJS! I am an eager learner and I thrive in environments where I can grow and collaborate alongside other developers. 
+          Software Developer with about 5 years of experience, focusing on front-end development using React, HTML5, CSS3, JavaScript, TypeScript, jQuery, Node, Express, MongoDB, GraphQL, MySQL. An analytical and detail-oriented graduate of UCF Coding Boot camp and UF Psychology. I am currently looking for my next contract focusing on ReactJS! I am an eager learner and I thrive in environments where I can grow and collaborate alongside other developers. 
           <br></br>
 
           {/* <br></br> */}

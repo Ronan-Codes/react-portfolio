@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f645ae91f48a0ed31dc7d3842ee3a611",
+    "revision": "91b0909a6160f1ad495acbd33d40b6ab",
     "url": "/react-portfolio/index.html"
   },
   {
-    "revision": "71451ac31320aeb66c73",
+    "revision": "27e6301ad0c243c061da",
     "url": "/react-portfolio/static/css/main.5066dd77.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-portfolio/static/js/2.5dc14442.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "71451ac31320aeb66c73",
-    "url": "/react-portfolio/static/js/main.a34dc1e2.chunk.js"
+    "revision": "27e6301ad0c243c061da",
+    "url": "/react-portfolio/static/js/main.9752109d.chunk.js"
   },
   {
     "revision": "aff33cef9dbb8787d6b3",
@@ -80,8 +80,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-portfolio/static/media/9.69a72dc9.png"
   },
   {
-    "revision": "480e8b10c1ff37ed3aac0cab680234c1",
-    "url": "/react-portfolio/static/media/Antra-Resume-Mock-Interview.480e8b10.pdf"
+    "revision": "6c82135469ffb8df1ebb91361531e4e3",
+    "url": "/react-portfolio/static/media/Antra-Resume-Mock-Interview.6c821354.pdf"
   },
   {
     "revision": "71dda98f160f101149852b7480e8ca34",
