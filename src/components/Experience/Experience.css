@@ -1,0 +1,43 @@
+/* ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  } */
+
+/* li {
+    color: black;
+} */
+/* 
+li::marker {
+    color: red;
+    content: "►";
+  } */
+.experiences {
+    margin-bottom: 4rem;
+}
+
+.experience {
+    background-color: rgba(255, 255, 255, 0.815);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    font-weight: 400;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    font-size: 1rem;
+}
+
+.experience__li::before {
+    content: "• ";
+    color: inherit;
+}
+
+.experience h2 {
+    color: var(--secondary)
+}
+
+/* .experience h2 {
+    font-size: 1.8rem;
+} */

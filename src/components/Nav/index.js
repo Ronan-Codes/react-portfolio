@@ -13,7 +13,7 @@ function Nav(props) {
     currentCategory
   } = props;
 
-  var threeCategories = categories.slice(0,3)
+  var fourCategories = categories.slice(0,4)
 
   useEffect(() => {
     document.title = capitalizeFirstLetter(currentCategory.name);
@@ -47,7 +47,7 @@ function Nav(props) {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
 
-              {threeCategories.map((category, i) => (
+              {fourCategories.map((category, i) => (
                 <li
                   className="mx-1 hover nav-color"
                   key={category.name}

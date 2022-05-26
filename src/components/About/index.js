@@ -6,10 +6,6 @@ import { Typewriter } from 'react-simple-typewriter'
 
 function About(props) {  
 
-  // const handleDone = () => {
-  //   console.log(`Done after 5 loops!`)
-  // }
-
   return (
     <section className="row justify-content-center align-items-center">
       <div className="col-lg-4 row justify-content-center my-lg-0 mb-3 mt-4">
@@ -42,7 +38,7 @@ function About(props) {
         </div>
         <div className="my-3">
           <p className="about-text body-text">
-          Software Developer with about 5 years of experience, focusing on front-end development using React, HTML5, CSS3, JavaScript, TypeScript, jQuery, Node, Express, MongoDB, GraphQL, MySQL. An analytical and detail-oriented graduate of UCF Coding Boot camp and UF Psychology. I am currently looking for my next contract focusing on ReactJS! I am an eager learner and I thrive in environments where I can grow and collaborate alongside other developers. 
+          Software Developer with 4 years of experience, focusing on front-end development using React, HTML5, CSS3, JavaScript, TypeScript, jQuery, Node, Express, MongoDB, GraphQL, MySQL. An analytical and detail-oriented graduate of UCF Coding Boot camp and UF Psychology. I am currently looking for my next contract focusing on ReactJS! I am an eager learner and I thrive in environments where I can grow and collaborate alongside other developers. 
           <br></br>
 
           {/* <br></br> */}

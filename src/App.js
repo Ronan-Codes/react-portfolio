@@ -3,6 +3,7 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
+import { Experience } from './components/Experience';
 // import Resume from './components/Resume';
 
 import './darkMode.scss'
@@ -18,6 +19,9 @@ function App() {
     },
     {
       name: 'portfolio'
+    },
+    {
+      name: 'experience'
     },
     {
       name: 'resume'
@@ -42,6 +46,9 @@ function App() {
         )}
         {currentCategory === categories[2] && (
           <Portfolio currentCategory={currentCategory}></Portfolio>
+        )}
+        {currentCategory === categories[3] && (
+          <Experience/>
         )}
         {/* {currentCategory === categories[3] && (
           <Resume></Resume>

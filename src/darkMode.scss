@@ -65,4 +65,18 @@ body.dark-mode {
     .hover::after {
         background: rgb(215, 224, 252);
     }
+
+    .experience {
+        background-color: rgb(136, 145, 176);
+        color: rgb(21, 50, 94);
+    }
+    
+    .experience__li::before {
+        content: "• ";
+        color: inherit;
+    }
+    
+    .experience h2 {
+        color: rgb(10, 25, 47);
+    }
 }
