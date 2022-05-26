@@ -93,7 +93,7 @@ header {
 }
 
 header a {
-  color: var(--light);
+  color: inherit;
 }
 
 nav {
@@ -153,7 +153,7 @@ li {
 
 nav a:hover {
   text-decoration: none;
-  /* color: var(--secondary) */
+  color: inherit;
 }
 
 nav li {
